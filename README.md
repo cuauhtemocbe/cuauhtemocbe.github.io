@@ -15,11 +15,11 @@ Este repo reúne los proyectos personales más representativos de ese trabajo �
 ## 🔭 Actividad reciente
 
 <!--RECENT_ACTIVITY:start-->
+- 📝 Issue closed en **cuauhtemocbe.github.io**: Add automated recent-activity signal via scoped, self-contained GitHub Action
+- 🔨 Push a **cuauhtemocbe.github.io** (0 commit)
+- 📝 Issue closed en **cuauhtemocbe.github.io**: Add CV-based professional summary to profile README
 - 📝 Issue closed en **Diplomado-Ciencia-Datos**: Extend notebook dependency smoke tests to all notebooks
 - 🔨 Push a **Diplomado-Ciencia-Datos** (0 commit)
-- 📝 Issue labeled en **cuauhtemocbe.github.io**: Add automated "currently working on" activity signal via scoped GitHub Action
-- 📝 Issue opened en **cuauhtemocbe.github.io**: Add automated "currently working on" activity signal via scoped GitHub Action
-- 📝 Issue labeled en **cuauhtemocbe.github.io**: Consolidation pass: one-screen README with a single call-to-action
 <!--RECENT_ACTIVITY:end-->
 
 ---
