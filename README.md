@@ -72,12 +72,13 @@ Este repo reúne los proyectos personales más representativos de ese trabajo �
 - **[AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash)** — Tablero interactivo (Python Dash) para analizar precios y ventas de aguacate en EE. UU. (2015–2018). Con tests (pytest) y CI.
 - **[homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer)** — Simulador interactivo de escenarios hipotéticos de homicidios en México (2000–2026). React + TypeScript + Vite. Tests (Vitest) y CI.
 - **[judicial-candidates-mx](https://github.com/cuauhtemocbe/judicial-candidates-mx)** — Webapp en Flask para comparar y analizar candidaturas judiciales en México.
+- **[Portfolio-Data-Scientist](https://github.com/cuauhtemocbe/Portfolio-Data-Scientist)** — Colección de proyectos y ejercicios de ciencia de datos (clasificación de lluvia en Australia, ETL con Postgres, análisis de sentimiento con NLP).
+- **[Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos)** — Entorno Dockerizado (Python 3.12 + Jupyter + Poetry) y actividades del Diplomado de Ciencia de Datos 2024–2025. CI (Pylint) y tests.
 
 ### 🛠️ Infraestructura / Ingeniería
 
 - **[dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py)** — Template de API REST en Python: FastAPI + Docker + arquitectura hexagonal, CI con cobertura mínima 90%, typecheck (mypy) y escaneo de vulnerabilidades (Trivy).
 - **[dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts)** — Boilerplate TypeScript listo para producción: Docker, DevContainers, CI (typecheck, tests con cobertura, build, audit).
-- **[Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos)** — Entorno Dockerizado (Python 3.12 + Jupyter + Poetry) y actividades del Diplomado de Ciencia de Datos 2024–2025. CI (Pylint) y tests.
 
 ---
 
