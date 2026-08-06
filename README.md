@@ -17,11 +17,11 @@ Este repo reúne los proyectos personales más representativos de ese trabajo �
 ![Gráfico de contribuciones de cuauhtemocbe](https://ghchart.rshah.org/2a6df5/cuauhtemocbe)
 
 <!--RECENT_ACTIVITY:start-->
+- 📝 Issue labeled en **cuauhtemocbe.github.io**: Add sticky in-page navigation across README sections
+- 📝 Issue opened en **cuauhtemocbe.github.io**: Add sticky in-page navigation across README sections
+- 📝 Issue labeled en **cuauhtemocbe.github.io**: Add live demo links alongside repo links on project cards
+- 📝 Issue opened en **cuauhtemocbe.github.io**: Add live demo links alongside repo links on project cards
 - 📝 Issue closed en **Diplomado-Ciencia-Datos**: main sin branch protection — el check de Pylint no bloquea merges · 1 comentario(s)
-- 📝 Issue closed en **Diplomado-Ciencia-Datos**: No hay configuración de Dependabot · 1 comentario(s)
-- 📝 Issue closed en **Diplomado-Ciencia-Datos**: CI: actions de terceros sin pinear por SHA y sin bloque permissions explícito · 1 comentario(s)
-- 📝 Issue closed en **Diplomado-Ciencia-Datos**: Upgrade Python base image from frozen 3.12.6-slim to 3.13-slim · 1 comentario(s)
-- 🔨 Push a **Diplomado-Ciencia-Datos**
 <!--RECENT_ACTIVITY:end-->
 
 ---
