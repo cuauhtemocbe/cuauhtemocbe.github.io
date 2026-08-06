@@ -33,7 +33,7 @@ Este repo reúne los proyectos personales más representativos de ese trabajo �
 - Lidero un equipo de 4 ingenieros: arquitectura técnica, aprobación de despliegues y rigor de ingeniería (testing, mutation testing, CI/CD).
 - Diseñé la plataforma de agentes conversacionales adoptada como estándar de la empresa (LangGraph + Langfuse), sostenida en producción por evaluación continua con score >95%.
 
-📄 [Ver CV](https://v0-portfolio-website-phi-lyart.vercel.app/) · [⬇️ Descargar PDF](assets/cv/cuauhtemoc-bautista-cv.pdf)
+📄 [Visita mi sitio](https://cuauhtemocbe.com/) · [⬇️ Descargar PDF](assets/cv/cuauhtemoc-bautista-cv.pdf)
 
 ---
 
