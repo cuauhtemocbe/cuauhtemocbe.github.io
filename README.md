@@ -17,11 +17,11 @@ Este repo reúne los proyectos personales más representativos de ese trabajo �
 ![Gráfico de contribuciones de cuauhtemocbe](https://ghchart.rshah.org/2a6df5/cuauhtemocbe)
 
 <!--RECENT_ACTIVITY:start-->
-- 📝 Issue closed en **cuauhtemocbe.github.io**: Add SEO meta tags, Open Graph image, and favicon
-- 📝 Issue closed en **cuauhtemocbe.github.io**: Style the GitHub Pages homepage (currently unstyled raw HTML)
+- 🔨 Push a **Diplomado-Ciencia-Datos**
+- 🔨 Push a **Diplomado-Ciencia-Datos**
 - 🔨 Push a **cuauhtemocbe.github.io**
-- 📝 Issue closed en **cuauhtemocbe.github.io**: Add a direct PDF download link for the CV, alongside the existing Vercel CV page
-- 📝 Issue closed en **Diplomado-Ciencia-Datos**: Add unit tests for data_analysis_octopus's outlier and stats helpers
+- 📝 Issue labeled en **Diplomado-Ciencia-Datos**: explain group (shap 0.46.0) has no cp313 wheel — needs build tools or version bump
+- 📝 Issue opened en **Diplomado-Ciencia-Datos**: explain group (shap 0.46.0) has no cp313 wheel — needs build tools or version bump
 <!--RECENT_ACTIVITY:end-->
 
 ---
