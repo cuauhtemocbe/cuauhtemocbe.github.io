@@ -15,11 +15,11 @@ Este repo reúne los proyectos personales más representativos de ese trabajo �
 ## 🔭 Actividad reciente
 
 <!--RECENT_ACTIVITY:start-->
-- 📝 Issue closed en **cuauhtemocbe.github.io**: Add automated recent-activity signal via scoped, self-contained GitHub Action
-- 🔨 Push a **cuauhtemocbe.github.io** (0 commit)
-- 📝 Issue closed en **cuauhtemocbe.github.io**: Add CV-based professional summary to profile README
-- 📝 Issue closed en **Diplomado-Ciencia-Datos**: Extend notebook dependency smoke tests to all notebooks
-- 🔨 Push a **Diplomado-Ciencia-Datos** (0 commit)
+- 📝 Issue closed en **cuauhtemocbe.github.io**: Add SEO meta tags, Open Graph image, and favicon
+- 📝 Issue closed en **cuauhtemocbe.github.io**: Style the GitHub Pages homepage (currently unstyled raw HTML)
+- 🔨 Push a **cuauhtemocbe.github.io**
+- 📝 Issue closed en **cuauhtemocbe.github.io**: Add a direct PDF download link for the CV, alongside the existing Vercel CV page
+- 📝 Issue closed en **Diplomado-Ciencia-Datos**: Add unit tests for data_analysis_octopus's outlier and stats helpers
 <!--RECENT_ACTIVITY:end-->
 
 ---

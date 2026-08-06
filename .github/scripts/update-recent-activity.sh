@@ -16,7 +16,7 @@ mapfile -t activity_lines < <(echo "$events_json" | jq -r '
   .[] |
   (.repo.name | split("/")[1]) as $repo |
   if .type == "PushEvent" then
-    "🔨 Push a **\($repo)** (\(.payload.commits | length) commit)"
+    "🔨 Push a **\($repo)**"
   elif .type == "PullRequestEvent" then
     "🔀 PR \(.payload.action) en **\($repo)**: \(.payload.pull_request.title)"
   elif .type == "IssuesEvent" then
