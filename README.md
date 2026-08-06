@@ -31,7 +31,7 @@ Este repo reúne los proyectos personales más representativos de ese trabajo �
 - Lidero un equipo de 4 ingenieros: arquitectura técnica, aprobación de despliegues y rigor de ingeniería (testing, mutation testing, CI/CD).
 - Diseñé la plataforma de agentes conversacionales adoptada como estándar de la empresa (LangGraph + Langfuse), sostenida en producción por evaluación continua con score >95%.
 
-📄 [CV completo](https://v0-portfolio-website-phi-lyart.vercel.app/)
+📄 [Ver CV](https://v0-portfolio-website-phi-lyart.vercel.app/) · [⬇️ Descargar PDF](assets/cv/cuauhtemoc-bautista-cv.pdf)
 
 ---
 
@@ -82,3 +82,7 @@ Este repo reúne los proyectos personales más representativos de ese trabajo �
 ## Stack
 
 `Python` `TypeScript` `FastAPI` `React` `LLMs (Claude, Llama, Together.ai)` `Langfuse` `Docker` `Railway` `GitHub Actions` `Poetry` `pytest`
+
+---
+
+<sub>Para refrescar el PDF del CV: regenerar `curriculum-vitae/out/CV.pdf` (`./scripts/generate_pdf.sh cvs/CV.md`) y copiarlo a `assets/cv/cuauhtemoc-bautista-cv.pdf` en este repo.</sub>
