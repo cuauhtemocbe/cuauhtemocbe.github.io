@@ -17,11 +17,11 @@ Este repo reúne los proyectos personales más representativos de ese trabajo �
 ![Gráfico de contribuciones de cuauhtemocbe](https://ghchart.rshah.org/2a6df5/cuauhtemocbe)
 
 <!--RECENT_ACTIVITY:start-->
-- 🔨 Push a **cuauhtemocbe.github.io**
-- 🔨 Push a **Diplomado-Ciencia-Datos**
-- 🔨 Push a **Diplomado-Ciencia-Datos**
-- 🔨 Push a **cuauhtemocbe.github.io**
-- 📝 Issue labeled en **Diplomado-Ciencia-Datos**: explain group (shap 0.46.0) has no cp313 wheel — needs build tools or version bump
+- 📝 Issue labeled en **cuauhtemocbe.github.io**: Add sticky in-page navigation across README sections
+- 📝 Issue opened en **cuauhtemocbe.github.io**: Add sticky in-page navigation across README sections
+- 📝 Issue labeled en **cuauhtemocbe.github.io**: Add live demo links alongside repo links on project cards
+- 📝 Issue opened en **cuauhtemocbe.github.io**: Add live demo links alongside repo links on project cards
+- 📝 Issue closed en **Diplomado-Ciencia-Datos**: main sin branch protection — el check de Pylint no bloquea merges · 1 comentario(s)
 <!--RECENT_ACTIVITY:end-->
 
 ---
