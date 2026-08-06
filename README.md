@@ -33,6 +33,11 @@ abierto, tests y CI; los que están desplegados enlazan su demo en vivo.
 - **[dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py)** — Template de API REST en Python: FastAPI + Docker + arquitectura hexagonal, CI con cobertura mínima 90%, typecheck (mypy) y escaneo de vulnerabilidades (Trivy).
 - **[dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts)** — Boilerplate TypeScript listo para producción: Docker, DevContainers, CI (typecheck, tests con cobertura, build, audit). · [Demo](https://dockyard2sail-ts-production.up.railway.app/)
 
+### 🧰 Apps / Herramientas
+
+- **[audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app)** — SPA en React + Vite que resalta palabra por palabra una transcripción sincronizada con audio. Tests (Vitest), CI, Docker. · [Demo](https://audio-sync-app-production.up.railway.app/)
+- **[pixel-vibe](https://github.com/cuauhtemocbe/pixel-vibe)** — Videojuego en Phaser.js + TypeScript + Vite, desarrollado junto con mi hijo usando vibe coding. Docker + DevContainer + pnpm.
+
 ---
 
 ## Proyecto destacado

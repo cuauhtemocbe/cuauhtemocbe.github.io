@@ -196,6 +196,8 @@ FALLBACK_ICONS = {
     "dockyard2sail-py": "🐍",
     "dockyard2sail-ts": "🚢",
     "diplomado-ciencia-datos": "🎓",
+    "audio-sync-app": "🎧",
+    "pixel-vibe": "👾",
 }
 
 
