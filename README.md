@@ -14,6 +14,8 @@ Este repo reúne los proyectos personales más representativos de ese trabajo �
 
 ## 🔭 Actividad reciente
 
+![Gráfico de contribuciones de cuauhtemocbe](https://ghchart.rshah.org/2a6df5/cuauhtemocbe)
+
 <!--RECENT_ACTIVITY:start-->
 - 📝 Issue closed en **cuauhtemocbe.github.io**: Add SEO meta tags, Open Graph image, and favicon
 - 📝 Issue closed en **cuauhtemocbe.github.io**: Style the GitHub Pages homepage (currently unstyled raw HTML)

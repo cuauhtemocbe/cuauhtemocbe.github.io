@@ -20,8 +20,8 @@ README = (ROOT / "README.md").read_text(encoding="utf-8")
 SCREENSHOT_DIR = ROOT / "assets" / "screenshots"
 
 # ---------------------------------------------------------------------------
-# Inline markdown -> HTML (bold, code, links only — this repo's README never
-# uses anything richer than that inside a line)
+# Inline markdown -> HTML (bold, code, links, images — this repo's README
+# never uses anything richer than that inside a line)
 # ---------------------------------------------------------------------------
 
 
@@ -29,6 +29,7 @@ def inline(text: str) -> str:
     text = escape(text, quote=False)
     text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"`(.+?)`", r"<code>\1</code>", text)
+    text = re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", r'<img src="\2" alt="\1" loading="lazy">', text)
     text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', text)
     return text
 
@@ -99,6 +100,8 @@ def bullet_items(body: str):
 actividad_heading, actividad_body = sections.get("actividadreciente", ("", ""))
 actividad_body_clean = re.sub(r"<!--.*?-->", "", actividad_body, flags=re.S)
 actividad_items = bullet_items(actividad_body_clean)
+contribution_graph_m = re.search(r"^!\[[^\]]*\]\([^)]+\)", actividad_body_clean, re.M)
+contribution_graph_line = contribution_graph_m.group(0) if contribution_graph_m else ""
 
 # --- Experiencia --------------------------------------------------------------
 _, experiencia_body = sections.get("experiencia", ("", ""))
@@ -155,6 +158,11 @@ contact_html = " &middot; ".join(
 activity_html = (
     "\n".join(f"<li>{inline(item)}</li>" for item in actividad_items)
     or "<li><em>Sin actividad pública reciente.</em></li>"
+)
+contribution_graph_html = (
+    f'<div class="contribution-graph">{inline(contribution_graph_line)}</div>'
+    if contribution_graph_line
+    else ""
 )
 
 exp_bullets_html = "\n".join(f"<li>{inline(b)}</li>" for b in exp_bullets)
@@ -284,6 +292,8 @@ code {{ background: var(--code-bg); padding: 0.1rem 0.35rem; border-radius: 4px;
 .contact a {{ color: var(--text); }}
 ul {{ padding-left: 1.1rem; color: var(--text-dim); }}
 li {{ margin-bottom: 0.4rem; }}
+.contribution-graph {{ background: #f5f6f8; border-radius: 10px; padding: 0.75rem; margin-bottom: 1rem; overflow-x: auto; }}
+.contribution-graph img {{ display: block; min-width: 640px; }}
 .activity-list {{ list-style: none; padding: 0; }}
 .activity-list li {{ padding: 0.5rem 0.75rem; background: var(--bg-alt); border-radius: 8px; margin-bottom: 0.5rem; font-size: 0.92rem; }}
 .project-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.9rem; margin-bottom: 1.5rem; }}
@@ -309,6 +319,7 @@ footer {{ margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }}
   {bio_html}
 
   <h2>🔭 Actividad reciente</h2>
+  {contribution_graph_html}
   <ul class="activity-list">{activity_html}</ul>
 
   <h2>Experiencia</h2>
