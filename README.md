@@ -30,7 +30,7 @@ abierto, tests y CI; los que están desplegados enlazan su demo en vivo.
 
 ### 🛠️ Infraestructura / Ingeniería
 
-- **[dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py)** — Template de API REST en Python: FastAPI + Docker + arquitectura hexagonal, CI con cobertura mínima 90%, typecheck (mypy) y escaneo de vulnerabilidades (Trivy).
+- **[dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py)** — Template de API REST en Python: FastAPI + Docker + arquitectura hexagonal, CI con cobertura mínima 90%, typecheck (mypy) y escaneo de vulnerabilidades (Trivy). · [Demo](https://dockyard2sail-py-production.up.railway.app/)
 - **[dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts)** — Boilerplate TypeScript listo para producción: Docker, DevContainers, CI (typecheck, tests con cobertura, build, audit). · [Demo](https://dockyard2sail-ts-production.up.railway.app/)
 
 ### 🧰 Apps / Herramientas
