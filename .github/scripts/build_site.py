@@ -103,17 +103,6 @@ actividad_items = bullet_items(actividad_body_clean)
 contribution_graph_m = re.search(r"^!\[[^\]]*\]\([^)]+\)", actividad_body_clean, re.M)
 contribution_graph_line = contribution_graph_m.group(0) if contribution_graph_m else ""
 
-# --- Experiencia --------------------------------------------------------------
-_, experiencia_body = sections.get("experiencia", ("", ""))
-exp_lines = [l for l in experiencia_body.splitlines() if l.strip()]
-exp_role_line = exp_lines[0] if exp_lines else ""
-exp_bullets = bullet_items(experiencia_body)
-exp_links_line = next((l for l in exp_lines if l.strip().startswith(("📄", "["))), "")
-
-# --- Cómo trabajo ---------------------------------------------------------
-_, como_trabajo_body = sections.get("comotrabajo", ("", ""))
-como_trabajo_items = bullet_items(como_trabajo_body)
-
 # --- Proyecto destacado -----------------------------------------------------
 _, destacado_body = sections.get("proyectodestacado", ("", ""))
 destacado_lines = [l for l in destacado_body.splitlines() if l.strip()]
@@ -131,8 +120,19 @@ for line in projects_body.splitlines():
         categories.append(current_cat)
     elif item_m and current_cat is not None:
         pname, purl, pdesc = item_m.groups()
+        # Optional trailing " · [Demo](url)" becomes a separate card action
+        demo_m = re.search(r"\s*·\s*\[Demo\]\(([^)]+)\)\s*$", pdesc)
+        demo_url = demo_m.group(1) if demo_m else ""
+        if demo_m:
+            pdesc = pdesc[: demo_m.start()].rstrip()
         current_cat["projects"].append(
-            {"name": pname, "url": purl, "desc": pdesc, "slug": slugify(pname)}
+            {
+                "name": pname,
+                "url": purl,
+                "desc": pdesc,
+                "demo": demo_url,
+                "slug": slugify(pname),
+            }
         )
 
 # --- Stack --------------------------------------------------------------------
@@ -154,6 +154,7 @@ bio_html = "\n".join(f"<p>{inline(p)}</p>" for p in bio_paragraphs)
 contact_html = " &middot; ".join(
     f'<a href="{href}">{icon} {escape(label)}</a>' for icon, label, href in contact_links
 )
+location_html = f" &middot; 📍 {escape(location)}" if location else ""
 
 activity_html = (
     "\n".join(f"<li>{inline(item)}</li>" for item in actividad_items)
@@ -163,12 +164,6 @@ contribution_graph_html = (
     f'<div class="contribution-graph">{inline(contribution_graph_line)}</div>'
     if contribution_graph_line
     else ""
-)
-
-exp_bullets_html = "\n".join(f"<li>{inline(b)}</li>" for b in exp_bullets)
-
-como_trabajo_html = "\n".join(
-    f"<li>{inline(item)}</li>" for item in como_trabajo_items
 )
 
 destacado_bullets_html = "\n".join(
@@ -216,15 +211,21 @@ category_html_parts = []
 for cat in categories:
     cards = []
     for p in cat["projects"]:
+        demo_action = (
+            f'<a class="project-action project-action--demo" href="{p["demo"]}">Demo ↗</a>'
+            if p["demo"]
+            else ""
+        )
         cards.append(
             f"""
-            <a class="project-card" href="{p['url']}">
+            <article class="project-card">
               {project_visual(p['slug'], p['name'])}
               <div class="project-card__body">
-                <h4>{escape(p['name'])}</h4>
+                <h4><a href="{p['url']}">{escape(p['name'])}</a></h4>
                 <p>{inline(p['desc'])}</p>
+                <div class="project-card__actions"><a class="project-action" href="{p['url']}">Código</a>{demo_action}</div>
               </div>
-            </a>"""
+            </article>"""
         )
     category_html_parts.append(
         f"""
@@ -297,12 +298,16 @@ li {{ margin-bottom: 0.4rem; }}
 .activity-list {{ list-style: none; padding: 0; }}
 .activity-list li {{ padding: 0.5rem 0.75rem; background: var(--bg-alt); border-radius: 8px; margin-bottom: 0.5rem; font-size: 0.92rem; }}
 .project-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.9rem; margin-bottom: 1.5rem; }}
-.project-card {{ display: block; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--bg-alt); }}
-.project-card:hover {{ border-color: var(--accent); text-decoration: none; }}
+.project-card {{ display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--bg-alt); }}
+.project-card:hover {{ border-color: var(--accent); }}
 .project-thumb {{ width: 100%; height: 110px; object-fit: cover; display: block; background: var(--code-bg); }}
 .project-thumb--fallback {{ display: flex; align-items: center; justify-content: center; font-size: 2.2rem; }}
-.project-card__body {{ padding: 0.75rem 0.9rem; }}
+.project-card__body {{ padding: 0.75rem 0.9rem; display: flex; flex-direction: column; flex: 1; }}
 .project-card__body p {{ font-size: 0.85rem; margin: 0; }}
+.project-card__actions {{ display: flex; gap: 0.4rem; margin-top: auto; padding-top: 0.7rem; }}
+.project-action {{ border: 1px solid var(--border); border-radius: 6px; padding: 0.2rem 0.6rem; font-size: 0.8rem; color: var(--text-dim); background: var(--bg); }}
+.project-action:hover {{ border-color: var(--accent); color: var(--accent); text-decoration: none; }}
+.project-action--demo {{ border-color: var(--accent); color: var(--accent); }}
 .badge {{ display: inline-block; background: var(--code-bg); border-radius: 6px; padding: 0.2rem 0.6rem; margin: 0.15rem; font-size: 0.85rem; }}
 .flagship-diagram {{ width: 100%; max-width: 420px; height: auto; margin: 1rem 0; }}
 .flagship-diagram rect {{ fill: var(--code-bg); stroke: var(--border); }}
@@ -315,33 +320,25 @@ footer {{ margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }}
 <main>
   <h1>{escape(name)}</h1>
   <p class="subtitle">{inline(title)}</p>
-  <p class="contact">{contact_html} &middot; 📍 {escape(location)}</p>
+  <p class="contact">{contact_html}{location_html}</p>
   {bio_html}
 
-  <h2>🔭 Actividad reciente</h2>
-  {contribution_graph_html}
-  <ul class="activity-list">{activity_html}</ul>
-
-  <h2>Experiencia</h2>
-  <p>{inline(exp_role_line)}</p>
-  <ul>{exp_bullets_html}</ul>
-  <p>{inline(exp_links_line)}</p>
-
-  <h2>Cómo trabajo</h2>
-  <ul>{como_trabajo_html}</ul>
+  <h2>Proyectos</h2>
+  {categories_html}
 
   <h2>Proyecto destacado</h2>
   <p>{inline(destacado_intro)}</p>
   {FLAGSHIP_DIAGRAM}
   <ul>{destacado_bullets_html}</ul>
 
-  <h2>Proyectos</h2>
-  {categories_html}
+  <h2>🔭 Actividad reciente</h2>
+  {contribution_graph_html}
+  <ul class="activity-list">{activity_html}</ul>
 
   <h2>Stack</h2>
   <p>{stack_html}</p>
 
-  <footer>{inline(footer_note)}<br>Generado automáticamente desde README.md — no editar index.html a mano.</footer>
+  <footer>{inline(footer_note) + "<br>" if footer_note else ""}Generado automáticamente desde README.md — no editar index.html a mano.</footer>
 </main>
 </body>
 </html>

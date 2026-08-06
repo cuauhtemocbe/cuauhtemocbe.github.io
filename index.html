@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cuauhtémoc Bautista — Manager AI Engineer</title>
-<meta name="description" content="Ingeniero de IA y científico de datos senior 8 años de experiencia, especializado en llevar agentes LLM a producción de forma confiable, con experiencia en fintech, banca/crédito y sector público regulado. El detalle de arquitectura, guardrails y evaluación continua está más abajo, en &quot;Cómo trabajo&quot;.">
+<title>Cuauhtémoc Bautista — AI Engineer</title>
+<meta name="description" content="Índice de mis proyectos en GitHub. Cada uno vive en su propio repo, con código abierto, tests y CI; los que están desplegados enlazan su demo en vivo.">
 <link rel="canonical" href="https://cuauhtemocbe.github.io/">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cuauhtemocbe.github.io/">
-<meta property="og:title" content="Cuauhtémoc Bautista — Manager AI Engineer">
-<meta property="og:description" content="Ingeniero de IA y científico de datos senior 8 años de experiencia, especializado en llevar agentes LLM a producción de forma confiable, con experiencia en fintech, banca/crédito y sector público regulado. El detalle de arquitectura, guardrails y evaluación continua está más abajo, en &quot;Cómo trabajo&quot;.">
+<meta property="og:title" content="Cuauhtémoc Bautista — AI Engineer">
+<meta property="og:description" content="Índice de mis proyectos en GitHub. Cada uno vive en su propio repo, con código abierto, tests y CI; los que están desplegados enlazan su demo en vivo.">
 <meta property="og:image" content="https://cuauhtemocbe.github.io/assets/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cuauhtémoc Bautista — Manager AI Engineer">
-<meta name="twitter:description" content="Ingeniero de IA y científico de datos senior 8 años de experiencia, especializado en llevar agentes LLM a producción de forma confiable, con experiencia en fintech, banca/crédito y sector público regulado. El detalle de arquitectura, guardrails y evaluación continua está más abajo, en &quot;Cómo trabajo&quot;.">
+<meta name="twitter:title" content="Cuauhtémoc Bautista — AI Engineer">
+<meta name="twitter:description" content="Índice de mis proyectos en GitHub. Cada uno vive en su propio repo, con código abierto, tests y CI; los que están desplegados enlazan su demo en vivo.">
 <meta name="twitter:image" content="https://cuauhtemocbe.github.io/assets/og-image.jpg">
 
 <style>
@@ -54,12 +54,16 @@ li { margin-bottom: 0.4rem; }
 .activity-list { list-style: none; padding: 0; }
 .activity-list li { padding: 0.5rem 0.75rem; background: var(--bg-alt); border-radius: 8px; margin-bottom: 0.5rem; font-size: 0.92rem; }
 .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.9rem; margin-bottom: 1.5rem; }
-.project-card { display: block; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--bg-alt); }
-.project-card:hover { border-color: var(--accent); text-decoration: none; }
+.project-card { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--bg-alt); }
+.project-card:hover { border-color: var(--accent); }
 .project-thumb { width: 100%; height: 110px; object-fit: cover; display: block; background: var(--code-bg); }
 .project-thumb--fallback { display: flex; align-items: center; justify-content: center; font-size: 2.2rem; }
-.project-card__body { padding: 0.75rem 0.9rem; }
+.project-card__body { padding: 0.75rem 0.9rem; display: flex; flex-direction: column; flex: 1; }
 .project-card__body p { font-size: 0.85rem; margin: 0; }
+.project-card__actions { display: flex; gap: 0.4rem; margin-top: auto; padding-top: 0.7rem; }
+.project-action { border: 1px solid var(--border); border-radius: 6px; padding: 0.2rem 0.6rem; font-size: 0.8rem; color: var(--text-dim); background: var(--bg); }
+.project-action:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.project-action--demo { border-color: var(--accent); color: var(--accent); }
 .badge { display: inline-block; background: var(--code-bg); border-radius: 6px; padding: 0.2rem 0.6rem; margin: 0.15rem; font-size: 0.85rem; }
 .flagship-diagram { width: 100%; max-width: 420px; height: auto; margin: 1rem 0; }
 .flagship-diagram rect { fill: var(--code-bg); stroke: var(--border); }
@@ -71,30 +75,123 @@ footer { margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }
 <body>
 <main>
   <h1>Cuauhtémoc Bautista</h1>
-  <p class="subtitle">Manager AI Engineer — Liderazgo técnico de equipos de IA generativa en producción</p>
-  <p class="contact"><a href="mailto:cuauhtemocbe@gmail.com">📧 cuauhtemocbe@gmail.com</a> &middot; <a href="https://www.linkedin.com/in/cuauhtemocbe">🔗 linkedin.com/in/cuauhtemocbe</a> &middot; 📍 CDMX, México</p>
-  <p>Ingeniero de IA y científico de datos senior (8 años de experiencia), especializado en llevar agentes LLM a producción de forma confiable, con experiencia en fintech, banca/crédito y sector público regulado. El detalle de arquitectura, guardrails y evaluación continua está más abajo, en "Cómo trabajo".</p>
-<p>Este repo reúne los proyectos personales más representativos de ese trabajo — cada uno vive en su propio repo, enlazado abajo.</p>
+  <p class="subtitle">AI Engineer — agentes LLM, data apps y templates de infraestructura</p>
+  <p class="contact"><a href="https://cuauhtemocbe.com/">🌐 cuauhtemocbe.com</a> &middot; <a href="https://www.linkedin.com/in/cuauhtemocbe">💼 LinkedIn</a></p>
+  <p>Índice de mis proyectos en GitHub. Cada uno vive en su propio repo, con código
+abierto, tests y CI; los que están desplegados enlazan su demo en vivo.</p>
 
-  <h2>🔭 Actividad reciente</h2>
-  <div class="contribution-graph"><img src="https://ghchart.rshah.org/2a6df5/cuauhtemocbe" alt="Gráfico de contribuciones de cuauhtemocbe" loading="lazy"></div>
-  <ul class="activity-list"><li>📝 Issue labeled en <strong>cuauhtemocbe.github.io</strong>: Add sticky in-page navigation across README sections</li>
-<li>📝 Issue opened en <strong>cuauhtemocbe.github.io</strong>: Add sticky in-page navigation across README sections</li>
-<li>📝 Issue labeled en <strong>cuauhtemocbe.github.io</strong>: Add live demo links alongside repo links on project cards</li>
-<li>📝 Issue opened en <strong>cuauhtemocbe.github.io</strong>: Add live demo links alongside repo links on project cards</li>
-<li>📝 Issue closed en <strong>Diplomado-Ciencia-Datos</strong>: main sin branch protection — el check de Pylint no bloquea merges · 1 comentario(s)</li></ul>
+  <h2>Proyectos</h2>
+  
+        <div class="category">
+          <h3>🤖 IA / LLMs</h3>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🗣️</span></div>
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/translate-and-teach">translate-and-teach</a></h4>
+                <p>Analizador de frases español→inglés con análisis gramatical y tips de aprendizaje, usando Llama 3.3 70B vía Together.ai. React + TypeScript, 54 tests, CI.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/translate-and-teach">Código</a><a class="project-action project-action--demo" href="https://translate-and-teach-production.up.railway.app/">Demo ↗</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🎬</span></div>
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/reel-forge-ts">reel-forge-ts</a></h4>
+                <p>Generador local de reels verticales a partir de imágenes + guion, con pacing, transiciones y captions decididos dinámicamente por <strong>Claude Code CLI</strong>. Tests con Vitest.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/reel-forge-ts">Código</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🧪</span></div>
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/agentic-evals">agentic-evals</a></h4>
+                <p>Prácticas de evaluación de agentes (agentic evals): entorno reproducible con Docker + Poetry + JupyterLab.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/agentic-evals">Código</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🦙</span></div>
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/Ollama-Open-WebUI">Ollama-Open-WebUI</a></h4>
+                <p>Instalación automatizada de Ollama + Open WebUI con Docker para correr LLMs localmente con interfaz tipo ChatGPT.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/Ollama-Open-WebUI">Código</a></div>
+              </div>
+            </article></div>
+        </div>
 
-  <h2>Experiencia</h2>
-  <p><strong>Manager AI Engineer — Auronix</strong> · desde enero 2026 · 8 años de experiencia en IA/datos</p>
-  <ul><li>Lidero un equipo de 4 ingenieros: arquitectura técnica, aprobación de despliegues y rigor de ingeniería (testing, mutation testing, CI/CD).</li>
-<li>Diseñé la plataforma de agentes conversacionales adoptada como estándar de la empresa (LangGraph + Langfuse), sostenida en producción por evaluación continua con score &gt;95%.</li></ul>
-  <p>📄 <a href="https://v0-portfolio-website-phi-lyart.vercel.app/">Ver CV</a> · <a href="assets/cv/cuauhtemoc-bautista-cv.pdf">⬇️ Descargar PDF</a></p>
+        <div class="category">
+          <h3>📊 Data Science / ML</h3>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>₿</span></div>
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/btc-predictor">btc-predictor</a></h4>
+                <p>Webapp de ML para predecir el precio de Bitcoin al día siguiente, con registro de predicciones, error histórico y simulación de PnL. Tests con pytest y mutation testing (100% score, Cosmic Ray).</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/btc-predictor">Código</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <img class="project-thumb" src="assets/screenshots/avocadodash.png" alt="Screenshot de AvocadoDash" loading="lazy">
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/AvocadoDash">AvocadoDash</a></h4>
+                <p>Tablero interactivo (Python Dash) para analizar precios y ventas de aguacate en EE. UU. (2015–2018). Tests con pytest y CI.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/AvocadoDash">Código</a><a class="project-action project-action--demo" href="https://avocadodash-production.up.railway.app/">Demo ↗</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>📉</span></div>
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/homicides-rate-visualizer">homicides-rate-visualizer</a></h4>
+                <p>Simulador interactivo de escenarios hipotéticos de homicidios en México (2000–2026). React + TypeScript + Vite, tests con Vitest y CI.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/homicides-rate-visualizer">Código</a><a class="project-action project-action--demo" href="https://homicides-rate-visualizer-production.up.railway.app/">Demo ↗</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>⚖️</span></div>
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/judicial-candidates-mx">judicial-candidates-mx</a></h4>
+                <p>Webapp en Flask para comparar y analizar candidaturas judiciales en México.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/judicial-candidates-mx">Código</a><a class="project-action project-action--demo" href="https://judicial-candidates-mx-production.up.railway.app/">Demo ↗</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>📦</span></div>
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/Portfolio-Data-Scientist">Portfolio-Data-Scientist</a></h4>
+                <p>Colección de proyectos de ciencia de datos: clasificación de lluvia en Australia, ETL con Postgres y análisis de sentimiento con NLP.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/Portfolio-Data-Scientist">Código</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🎓</span></div>
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos">Diplomado-Ciencia-Datos</a></h4>
+                <p>Entorno Dockerizado (Python 3.12 + Jupyter + Poetry) y actividades del Diplomado de Ciencia de Datos 2024–2025. CI con Pylint y tests.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos">Código</a></div>
+              </div>
+            </article></div>
+        </div>
 
-  <h2>Cómo trabajo</h2>
-  <ul><li><strong>Evaluación continua antes de shippear</strong>: capability evals, redteam adversarial y regression evals sobre golden datasets (score &gt;95% en producción), más mutation testing (~99% en Auronix, 100% en <code>btc-predictor</code> con Cosmic Ray).</li>
-<li><strong>Guardrails de seguridad por defecto</strong>: sin push directo a main (rama + PR + CI verde) y un gate de Socket Firewall que bloquea dependencias maliciosas en PRs de Dependabot, reforzado con SCA continuo — ver <code>meta-projects</code> y los repos de infraestructura abajo.</li>
-<li><strong>Gobernanza de estándares a escala</strong>: auditoría automatizada de buenas prácticas por repositorio y sincronización de configuración/skills entre proyectos, detectando divergencias reales frente a simples retrasos.</li>
-<li><strong>Rigor de ingeniería verificable, no solo declarado</strong>: cobertura de tests gateada en CI (<code>dockyard2sail-py</code>, 90% mínimo), tipado estricto (mypy) y escaneo de vulnerabilidades (Trivy) antes de build.</li></ul>
+        <div class="category">
+          <h3>🛠️ Infraestructura / Ingeniería</h3>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🐍</span></div>
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/dockyard2sail-py">dockyard2sail-py</a></h4>
+                <p>Template de API REST en Python: FastAPI + Docker + arquitectura hexagonal, CI con cobertura mínima 90%, typecheck (mypy) y escaneo de vulnerabilidades (Trivy).</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/dockyard2sail-py">Código</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🚢</span></div>
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/dockyard2sail-ts">dockyard2sail-ts</a></h4>
+                <p>Boilerplate TypeScript listo para producción: Docker, DevContainers, CI (typecheck, tests con cobertura, build, audit).</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/dockyard2sail-ts">Código</a><a class="project-action project-action--demo" href="https://dockyard2sail-ts-production.up.railway.app/">Demo ↗</a></div>
+              </div>
+            </article></div>
+        </div>
 
   <h2>Proyecto destacado</h2>
   <p><strong>meta-projects</strong> — meta-repo privado que orquesta todo este portafolio (<code>~/Projects</code>) con agentes LLM. Repo privado, sin link público — la descripción es del sistema, no del código:</p>
@@ -110,109 +207,23 @@ footer { margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }
   <line x1="180" y1="122" x2="220" y2="122" class="edge"/>
 </svg>
 
-  <ul><li><strong>Framework agéntico multicapa</strong>: sistema de agentes LLM (Claude Code CLI, skills propios, servidores MCP) con una capa mecánica de hooks para automatizar la gestión de múltiples repositorios y servicios.</li>
+  <ul><li><strong>Framework agéntico multicapa</strong>: agentes LLM (Claude Code CLI, skills propios, servidores MCP) con una capa mecánica de hooks para automatizar la gestión de múltiples repositorios y servicios.</li>
 <li><strong>Orquestación multiagente en dos etapas</strong>: un agente propone User Stories cross-repo y otro las implementa tras aprobación humana, invocando Claude Code CLI en cada repo destino.</li>
-<li><strong>Guardrails de seguridad</strong>: modelo de despliegue sin push directo a main (rama + PR + CI verde) y un gate de Socket Firewall que bloquea automáticamente dependencias maliciosas en PRs de Dependabot, reforzado con SCA continuo vía Socket Security.</li>
+<li><strong>Guardrails de seguridad</strong>: sin push directo a main (rama + PR + CI verde) y un gate de Socket Firewall que bloquea dependencias maliciosas en PRs de Dependabot, con SCA continuo.</li>
 <li><strong>Gobernanza de estándares a escala</strong>: auditoría automatizada de buenas prácticas por repositorio y sincronización de configuración y skills de Claude Code entre proyectos.</li></ul>
 
-  <h2>Proyectos</h2>
-  
-        <div class="category">
-          <h3>🤖 IA / LLMs</h3>
-          <div class="project-grid">
-            <a class="project-card" href="https://github.com/cuauhtemocbe/agentic-evals">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🧪</span></div>
-              <div class="project-card__body">
-                <h4>agentic-evals</h4>
-                <p>Prácticas de evaluación de agentes (agentic evals): entorno reproducible con Docker + Poetry + JupyterLab.</p>
-              </div>
-            </a>
-            <a class="project-card" href="https://github.com/cuauhtemocbe/reel-forge-ts">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🎬</span></div>
-              <div class="project-card__body">
-                <h4>reel-forge-ts</h4>
-                <p>Generador local de reels/videos verticales a partir de imágenes + guion, con pacing, transiciones y captions decididos dinámicamente por <strong>Claude Code CLI</strong>. Con tests (Vitest).</p>
-              </div>
-            </a>
-            <a class="project-card" href="https://github.com/cuauhtemocbe/translate-and-teach">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🗣️</span></div>
-              <div class="project-card__body">
-                <h4>translate-and-teach</h4>
-                <p>Analizador de frases español→inglés con análisis gramatical y tips de aprendizaje, usando Llama 3.3 70B vía Together.ai. React + TypeScript, 54 tests, CI (lint + test).</p>
-              </div>
-            </a>
-            <a class="project-card" href="https://github.com/cuauhtemocbe/Ollama-Open-WebUI">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🦙</span></div>
-              <div class="project-card__body">
-                <h4>Ollama-Open-WebUI</h4>
-                <p>Instalación automatizada de Ollama + Open WebUI con Docker para correr LLMs localmente con interfaz tipo ChatGPT.</p>
-              </div>
-            </a></div>
-        </div>
-
-        <div class="category">
-          <h3>📊 Data Science / ML</h3>
-          <div class="project-grid">
-            <a class="project-card" href="https://github.com/cuauhtemocbe/btc-predictor">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>₿</span></div>
-              <div class="project-card__body">
-                <h4>btc-predictor</h4>
-                <p>Webapp de ML para predecir el precio de Bitcoin al día siguiente, con registro de predicciones, error histórico y simulación de PnL. Desplegado en Railway. Con tests (pytest) y mutation testing (100% score, Cosmic Ray).</p>
-              </div>
-            </a>
-            <a class="project-card" href="https://github.com/cuauhtemocbe/AvocadoDash">
-              <img class="project-thumb" src="assets/screenshots/avocadodash.png" alt="Screenshot de AvocadoDash" loading="lazy">
-              <div class="project-card__body">
-                <h4>AvocadoDash</h4>
-                <p>Tablero interactivo (Python Dash) para analizar precios y ventas de aguacate en EE. UU. (2015–2018). Con tests (pytest) y CI.</p>
-              </div>
-            </a>
-            <a class="project-card" href="https://github.com/cuauhtemocbe/homicides-rate-visualizer">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>📉</span></div>
-              <div class="project-card__body">
-                <h4>homicides-rate-visualizer</h4>
-                <p>Simulador interactivo de escenarios hipotéticos de homicidios en México (2000–2026). React + TypeScript + Vite. Tests (Vitest) y CI.</p>
-              </div>
-            </a>
-            <a class="project-card" href="https://github.com/cuauhtemocbe/judicial-candidates-mx">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>⚖️</span></div>
-              <div class="project-card__body">
-                <h4>judicial-candidates-mx</h4>
-                <p>Webapp en Flask para comparar y analizar candidaturas judiciales en México.</p>
-              </div>
-            </a></div>
-        </div>
-
-        <div class="category">
-          <h3>🛠️ Infraestructura / Ingeniería</h3>
-          <div class="project-grid">
-            <a class="project-card" href="https://github.com/cuauhtemocbe/dockyard2sail-py">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🐍</span></div>
-              <div class="project-card__body">
-                <h4>dockyard2sail-py</h4>
-                <p>Template de API REST en Python: FastAPI + Docker + arquitectura hexagonal, CI con cobertura mínima 90%, typecheck (mypy) y escaneo de vulnerabilidades (Trivy).</p>
-              </div>
-            </a>
-            <a class="project-card" href="https://github.com/cuauhtemocbe/dockyard2sail-ts">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🚢</span></div>
-              <div class="project-card__body">
-                <h4>dockyard2sail-ts</h4>
-                <p>Boilerplate TypeScript listo para producción: Docker, DevContainers, CI (typecheck, tests con cobertura, build, audit).</p>
-              </div>
-            </a>
-            <a class="project-card" href="https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🎓</span></div>
-              <div class="project-card__body">
-                <h4>Diplomado-Ciencia-Datos</h4>
-                <p>Entorno Dockerizado (Python 3.12 + Jupyter + Poetry) y actividades del Diplomado de Ciencia de Datos 2024–2025. CI (Pylint) y tests.</p>
-              </div>
-            </a></div>
-        </div>
+  <h2>🔭 Actividad reciente</h2>
+  <div class="contribution-graph"><img src="https://ghchart.rshah.org/2a6df5/cuauhtemocbe" alt="Gráfico de contribuciones de cuauhtemocbe" loading="lazy"></div>
+  <ul class="activity-list"><li>📝 Issue labeled en <strong>cuauhtemocbe.github.io</strong>: Add sticky in-page navigation across README sections</li>
+<li>📝 Issue opened en <strong>cuauhtemocbe.github.io</strong>: Add sticky in-page navigation across README sections</li>
+<li>📝 Issue labeled en <strong>cuauhtemocbe.github.io</strong>: Add live demo links alongside repo links on project cards</li>
+<li>📝 Issue opened en <strong>cuauhtemocbe.github.io</strong>: Add live demo links alongside repo links on project cards</li>
+<li>📝 Issue closed en <strong>Diplomado-Ciencia-Datos</strong>: main sin branch protection — el check de Pylint no bloquea merges · 1 comentario(s)</li></ul>
 
   <h2>Stack</h2>
-  <p><span class="badge">Python</span> <span class="badge">TypeScript</span> <span class="badge">FastAPI</span> <span class="badge">React</span> <span class="badge">LLMs (Claude, Llama, Together.ai)</span> <span class="badge">Langfuse</span> <span class="badge">Docker</span> <span class="badge">Railway</span> <span class="badge">GitHub Actions</span> <span class="badge">Poetry</span> <span class="badge">pytest</span></p>
+  <p><span class="badge">Python</span> <span class="badge">TypeScript</span> <span class="badge">React</span> <span class="badge">FastAPI</span> <span class="badge">LLMs (Claude, Llama, Together.ai)</span> <span class="badge">Docker</span> <span class="badge">Railway</span> <span class="badge">GitHub Actions</span> <span class="badge">pytest</span></p>
 
-  <footer>Para refrescar el PDF del CV: regenerar <code>curriculum-vitae/out/CV.pdf</code> (<code>./scripts/generate_pdf.sh cvs/CV.md</code>) y copiarlo a <code>assets/cv/cuauhtemoc-bautista-cv.pdf</code> en este repo.<br>Generado automáticamente desde README.md — no editar index.html a mano.</footer>
+  <footer>Generado automáticamente desde README.md — no editar index.html a mano.</footer>
 </main>
 </body>
 </html>
