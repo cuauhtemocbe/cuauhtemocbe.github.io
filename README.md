@@ -36,7 +36,7 @@ abierto, tests y CI; los que están desplegados enlazan su demo en vivo.
 ### 🧰 Apps / Herramientas
 
 - **[audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app)** — SPA en React + Vite que resalta palabra por palabra una transcripción sincronizada con audio. Tests (Vitest), CI, Docker. · [Demo](https://audio-sync-app-production.up.railway.app/)
-- **[pixel-vibe](https://github.com/cuauhtemocbe/pixel-vibe)** — Videojuego en Phaser.js + TypeScript + Vite, desarrollado junto con mi hijo usando vibe coding. Docker + DevContainer + pnpm.
+- **[pixel-vibe](https://github.com/cuauhtemocbe/pixel-vibe)** — Videojuego en Phaser.js + TypeScript + Vite, desarrollado junto con mi hijo usando vibe coding. Docker + DevContainer + pnpm. · [Demo](https://pixel-vibe-production.up.railway.app/)
 
 ---
 
