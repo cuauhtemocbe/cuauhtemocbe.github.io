@@ -156,6 +156,14 @@ contact_html = " &middot; ".join(
 )
 location_html = f" &middot; 📍 {escape(location)}" if location else ""
 
+NAV_ITEMS = [
+    ("proyectos", "Proyectos"),
+    ("destacado", "Proyecto destacado"),
+    ("actividad", "Actividad reciente"),
+    ("stack", "Stack"),
+]
+nav_html = "\n".join(f'<a href="#{nid}">{escape(label)}</a>' for nid, label in NAV_ITEMS)
+
 activity_html = (
     "\n".join(f"<li>{inline(item)}</li>" for item in actividad_items)
     or "<li><em>Sin actividad pública reciente.</em></li>"
@@ -276,6 +284,7 @@ HTML = f"""<!doctype html>
   }}
 }}
 * {{ box-sizing: border-box; }}
+html {{ scroll-behavior: smooth; }}
 body {{
   margin: 0; background: var(--bg); color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -283,7 +292,7 @@ body {{
 }}
 main {{ max-width: 780px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }}
 h1 {{ font-size: 1.9rem; margin: 0 0 0.25rem; }}
-h2 {{ font-size: 1.3rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; margin-top: 2.5rem; }}
+h2 {{ font-size: 1.3rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; margin-top: 2.5rem; scroll-margin-top: 4.5rem; }}
 h3 {{ font-size: 1.05rem; margin-bottom: 0.75rem; }}
 h4 {{ margin: 0 0 0.25rem; font-size: 0.98rem; }}
 p {{ color: var(--text-dim); }}
@@ -293,6 +302,17 @@ code {{ background: var(--code-bg); padding: 0.1rem 0.35rem; border-radius: 4px;
 .subtitle {{ color: var(--text-dim); font-weight: 600; margin: 0 0 1rem; }}
 .contact {{ margin-bottom: 1.25rem; font-size: 0.95rem; }}
 .contact a {{ color: var(--text); }}
+.site-nav {{
+  position: sticky; top: 0; z-index: 10; display: flex; gap: 0.5rem;
+  overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch;
+  background: var(--bg); border-bottom: 1px solid var(--border);
+  margin: 0 -1.25rem 1.5rem; padding: 0.6rem 1.25rem;
+}}
+.site-nav a {{
+  flex: 0 0 auto; color: var(--text-dim); font-size: 0.85rem; font-weight: 600;
+  padding: 0.3rem 0.7rem; border-radius: 999px; background: var(--bg-alt);
+}}
+.site-nav a:hover {{ color: var(--accent); text-decoration: none; }}
 ul {{ padding-left: 1.1rem; color: var(--text-dim); }}
 li {{ margin-bottom: 0.4rem; }}
 .contribution-graph {{ background: #f5f6f8; border-radius: 10px; padding: 0.75rem; margin-bottom: 1rem; overflow-x: auto; }}
@@ -322,21 +342,22 @@ footer {{ margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }}
   <h1>{escape(name)}</h1>
   <p class="subtitle">{inline(title)}</p>
   <p class="contact">{contact_html}{location_html}</p>
+  <nav class="site-nav" aria-label="Secciones">{nav_html}</nav>
   {bio_html}
 
-  <h2>Proyectos</h2>
+  <h2 id="proyectos">Proyectos</h2>
   {categories_html}
 
-  <h2>Proyecto destacado</h2>
+  <h2 id="destacado">Proyecto destacado</h2>
   <p>{inline(destacado_intro)}</p>
   {FLAGSHIP_DIAGRAM}
   <ul>{destacado_bullets_html}</ul>
 
-  <h2>🔭 Actividad reciente</h2>
+  <h2 id="actividad">🔭 Actividad reciente</h2>
   {contribution_graph_html}
   <ul class="activity-list">{activity_html}</ul>
 
-  <h2>Stack</h2>
+  <h2 id="stack">Stack</h2>
   <p>{stack_html}</p>
 
   <footer>{inline(footer_note) + "<br>" if footer_note else ""}Generado automáticamente desde README.md — no editar index.html a mano.</footer>
