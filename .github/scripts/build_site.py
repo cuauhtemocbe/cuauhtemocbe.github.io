@@ -214,7 +214,7 @@ for cat in categories:
     cards = []
     for p in cat["projects"]:
         demo_action = (
-            f'<a class="project-action project-action--demo" href="{p["demo"]}">Demo ↗</a>'
+            f'<a class="project-action project-action--demo" href="{p["demo"]}" target="_blank" rel="noopener">Demo ↗</a>'
             if p["demo"]
             else ""
         )
