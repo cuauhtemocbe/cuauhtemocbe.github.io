@@ -56,11 +56,11 @@ abierto, tests y CI; los que están desplegados enlazan su demo en vivo.
 ![Gráfico de contribuciones de cuauhtemocbe](https://ghchart.rshah.org/2a6df5/cuauhtemocbe)
 
 <!--RECENT_ACTIVITY:start-->
-- 🔀 PR opened en **translate-and-teach**: build: upgrade Node.js runtime from 22 to 26 · 1 comentario(s)
-- 📝 Issue closed en **translate-and-teach**: Upgrade Node base image from 22-alpine to standardized version · 1 comentario(s)
-- 📝 Issue closed en **btc-predictor**: US-026: Model Comparison Dashboard · 1 comentario(s)
-- 📝 Issue closed en **btc-predictor**: US-025: Multi-Model Predictions (Parallel) · 3 comentario(s)
-- 📝 Issue closed en **translate-and-teach**: Add versioned CHANGELOG.md · 2 comentario(s)
+- 🔨 Push a **btc-predictor**
+- 🔨 Push a **btc-predictor**
+- 🔀 PR merged en **Diplomado-Ciencia-Datos**: Standardize data_analysis_octopus imports across remaining notebooks
+- 🔨 Push a **Diplomado-Ciencia-Datos**
+- 📝 Issue closed en **Diplomado-Ciencia-Datos**: Standardize data_analysis_octopus imports across remaining notebooks
 <!--RECENT_ACTIVITY:end-->
 
 ---
