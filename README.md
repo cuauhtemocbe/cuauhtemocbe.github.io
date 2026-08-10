@@ -56,11 +56,11 @@ abierto, tests y CI; los que están desplegados enlazan su demo en vivo.
 ![Gráfico de contribuciones de cuauhtemocbe](https://ghchart.rshah.org/2a6df5/cuauhtemocbe)
 
 <!--RECENT_ACTIVITY:start-->
-- 🔨 Push a **btc-predictor**
-- 🔨 Push a **btc-predictor**
-- 🔀 PR merged en **Diplomado-Ciencia-Datos**: Standardize data_analysis_octopus imports across remaining notebooks
-- 🔨 Push a **Diplomado-Ciencia-Datos**
-- 📝 Issue closed en **Diplomado-Ciencia-Datos**: Standardize data_analysis_octopus imports across remaining notebooks
+- 📝 Issue labeled en **btc-predictor**: Improve model reproducibility and failure handling
+- 📝 Issue labeled en **btc-predictor**: Prevent blocking database calls in API endpoints
+- 📝 Issue labeled en **btc-predictor**: Improve model reproducibility and failure handling
+- 📝 Issue labeled en **btc-predictor**: Prevent blocking database calls in API endpoints
+- 📝 Issue labeled en **btc-predictor**: Validate continuity of historical price data
 <!--RECENT_ACTIVITY:end-->
 
 ---
