@@ -26,11 +26,20 @@ SCREENSHOT_DIR = ROOT / "assets" / "screenshots"
 
 
 def inline(text: str) -> str:
-    text = escape(text, quote=False)
+    def image_html(match):
+        alt = match.group(1)
+        hidden = ' aria-hidden="true"' if not alt else ""
+        return f'<img src="{match.group(2)}" alt="{alt}"{hidden} loading="lazy">'
+
+    text = escape(text, quote=True)
     text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"`(.+?)`", r"<code>\1</code>", text)
-    text = re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", r'<img src="\2" alt="\1" loading="lazy">', text)
-    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', text)
+    text = re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", image_html, text)
+    text = re.sub(
+        r"\[([^\]]+)\]\(([^)]+)\)",
+        lambda m: f'<a href="{m.group(2)}">{m.group(1)}</a>',
+        text,
+    )
     return text
 
 
@@ -45,9 +54,17 @@ def slugify(name: str) -> str:
 blocks = re.split(r"\n-{3,}\n", README.strip())
 intro_block, *section_blocks = blocks
 
+
+def fail(message: str):
+    raise SystemExit(f"README validation failed: {message}")
+
 # --- Intro: name, title, contact links, bio paragraphs ---------------------
-name = re.search(r"^#\s+(.+)$", intro_block, re.M).group(1).strip()
-title = re.search(r"^\*\*(.+)\*\*$", intro_block, re.M).group(1).strip()
+name_m = re.search(r"^#\s+(.+)$", intro_block, re.M)
+title_m = re.search(r"^\*\*(.+)\*\*$", intro_block, re.M)
+if not name_m or not title_m:
+    fail("intro must contain an H1 name and a bold title line")
+name = name_m.group(1).strip()
+title = title_m.group(1).strip()
 
 contact_links = []
 for line in intro_block.splitlines():
@@ -86,6 +103,13 @@ for block in section_blocks:
         projects_body = body
     else:
         sections[key] = (heading_text, body)
+
+required_sections = {"actividadreciente", "proyectodestacado", "stack"}
+missing_sections = required_sections - sections.keys()
+if missing_sections:
+    fail(f"missing required sections: {', '.join(sorted(missing_sections))}")
+if not projects_body:
+    fail("missing a section whose heading contains 'Proyectos'")
 
 
 def bullet_items(body: str):
@@ -135,6 +159,13 @@ for line in projects_body.splitlines():
             }
         )
 
+project_count = sum(len(cat["projects"]) for cat in categories)
+if not categories or project_count == 0:
+    fail("the Proyectos section must contain at least one category and project")
+project_bullets = [line for line in projects_body.splitlines() if line.strip().startswith("- ")]
+if len(project_bullets) != project_count:
+    fail("every project bullet must match '- **[name](url)** — description'")
+
 # --- Stack --------------------------------------------------------------------
 _, stack_body = sections.get("stack", ("", ""))
 stack_items = re.findall(r"`([^`]+)`", stack_body)
@@ -152,7 +183,8 @@ if blocks:
 
 bio_html = "\n".join(f"<p>{inline(p)}</p>" for p in bio_paragraphs)
 contact_html = " &middot; ".join(
-    f'<a href="{href}">{icon} {escape(label)}</a>' for icon, label, href in contact_links
+    f'<a href="{escape(href, quote=True)}">{icon} {escape(label)}</a>'
+    for icon, label, href in contact_links
 )
 location_html = f" &middot; 📍 {escape(location)}" if location else ""
 
@@ -193,19 +225,12 @@ FLAGSHIP_DIAGRAM = """
 """
 
 FALLBACK_ICONS = {
-    "agentic-evals": "🧪",
-    "reel-forge-ts": "🎬",
-    "translate-and-teach": "🗣️",
-    "ollama-open-webui": "🦙",
-    "btc-predictor": "₿",
-    "avocadodash": "🥑",
-    "homicides-rate-visualizer": "📉",
-    "judicial-candidates-mx": "⚖️",
-    "dockyard2sail-py": "🐍",
-    "dockyard2sail-ts": "🚢",
-    "diplomado-ciencia-datos": "🎓",
-    "audio-sync-app": "🎧",
-    "pixel-vibe": "👾",
+    "agentic-evals": "agentic-evals.svg",
+    "reel-forge-ts": "reel-forge-ts.svg",
+    "ollama-open-webui": "ollama-open-webui.svg",
+    "btc-predictor": "btc-predictor.svg",
+    "portfolio-data-scientist": "portfolio-data-scientist.svg",
+    "diplomado-ciencia-datos": "diplomado-ciencia-datos.svg",
 }
 
 
@@ -213,8 +238,10 @@ def project_visual(slug: str, name: str) -> str:
     img_path = SCREENSHOT_DIR / f"{slug}.png"
     if img_path.exists():
         return f'<img class="project-thumb" src="assets/screenshots/{slug}.png" alt="Screenshot de {escape(name)}" loading="lazy">'
-    icon = FALLBACK_ICONS.get(slug, "📦")
-    return f'<div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>{icon}</span></div>'
+    icon = FALLBACK_ICONS.get(slug)
+    if icon:
+        return f'<div class="project-thumb project-thumb--fallback" aria-hidden="true"><img src="assets/project-icons/{icon}" alt=""></div>'
+    return '<div class="project-thumb project-thumb--fallback" aria-hidden="true"></div>'
 
 
 category_html_parts = []
@@ -222,7 +249,7 @@ for cat in categories:
     cards = []
     for p in cat["projects"]:
         demo_action = (
-            f'<a class="project-action project-action--demo" href="{p["demo"]}" target="_blank" rel="noopener">Demo ↗</a>'
+            f'<a class="project-action project-action--demo" href="{escape(p["demo"], quote=True)}" target="_blank" rel="noopener" aria-label="Demo de {escape(p["name"])}">Demo ↗</a>'
             if p["demo"]
             else ""
         )
@@ -231,16 +258,16 @@ for cat in categories:
             <article class="project-card">
               {project_visual(p['slug'], p['name'])}
               <div class="project-card__body">
-                <h4><a href="{p['url']}">{escape(p['name'])}</a></h4>
+                <h4><a href="{escape(p['url'], quote=True)}">{escape(p['name'])}</a></h4>
                 <p>{inline(p['desc'])}</p>
-                <div class="project-card__actions"><a class="project-action" href="{p['url']}">Código</a>{demo_action}</div>
+                <div class="project-card__actions"><a class="project-action" href="{escape(p['url'], quote=True)}" aria-label="Código de {escape(p['name'])}">Código</a>{demo_action}</div>
               </div>
             </article>"""
         )
     category_html_parts.append(
         f"""
         <div class="category">
-          <h3>{escape(cat['name'])}</h3>
+          <h3>{inline(cat['name'])}</h3>
           <div class="project-grid">{''.join(cards)}</div>
         </div>"""
     )
@@ -274,8 +301,9 @@ HTML = f"""<!doctype html>
 
 <style>
 :root {{
+  color-scheme: light dark;
   --bg: #ffffff; --bg-alt: #f5f6f8; --text: #1c1f24; --text-dim: #565d68;
-  --accent: #2a6df5; --border: #e3e6ea; --code-bg: #eef1f5;
+  --accent: #1f5fe0; --border: #e3e6ea; --code-bg: #eef1f5;
 }}
 @media (prefers-color-scheme: dark) {{
   :root {{
@@ -285,6 +313,10 @@ HTML = f"""<!doctype html>
 }}
 * {{ box-sizing: border-box; }}
 html {{ scroll-behavior: smooth; }}
+@media (prefers-reduced-motion: reduce) {{
+  html {{ scroll-behavior: auto; }}
+  *, *::before, *::after {{ transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }}
+}}
 body {{
   margin: 0; background: var(--bg); color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -292,12 +324,14 @@ body {{
 }}
 main {{ max-width: 780px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }}
 h1 {{ font-size: 1.9rem; margin: 0 0 0.25rem; }}
-h2 {{ font-size: 1.3rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; margin-top: 2.5rem; scroll-margin-top: 4.5rem; }}
+h2 {{ font-size: 1.3rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; margin-top: 2.5rem; scroll-margin-top: 3.25rem; }}
 h3 {{ font-size: 1.05rem; margin-bottom: 0.75rem; }}
+h3 img {{ width: 1.2em; height: 1.2em; vertical-align: -0.2em; margin-right: 0.25rem; }}
 h4 {{ margin: 0 0 0.25rem; font-size: 0.98rem; }}
 p {{ color: var(--text-dim); }}
 a {{ color: var(--accent); text-decoration: none; }}
 a:hover {{ text-decoration: underline; }}
+a:focus-visible {{ outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }}
 code {{ background: var(--code-bg); padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.85em; }}
 .subtitle {{ color: var(--text-dim); font-weight: 600; margin: 0 0 1rem; }}
 .contact {{ margin-bottom: 1.25rem; font-size: 0.95rem; }}
@@ -315,7 +349,7 @@ code {{ background: var(--code-bg); padding: 0.1rem 0.35rem; border-radius: 4px;
 .site-nav a:hover {{ color: var(--accent); text-decoration: none; }}
 ul {{ padding-left: 1.1rem; color: var(--text-dim); }}
 li {{ margin-bottom: 0.4rem; }}
-.contribution-graph {{ background: #f5f6f8; border-radius: 10px; padding: 0.75rem; margin-bottom: 1rem; overflow-x: auto; }}
+.contribution-graph {{ background: var(--bg-alt); border-radius: 10px; padding: 0.75rem; margin-bottom: 1rem; overflow-x: auto; }}
 .contribution-graph img {{ display: block; min-width: 640px; }}
 .activity-list {{ list-style: none; padding: 0; }}
 .activity-list li {{ padding: 0.5rem 0.75rem; background: var(--bg-alt); border-radius: 8px; margin-bottom: 0.5rem; font-size: 0.92rem; }}
@@ -324,6 +358,7 @@ li {{ margin-bottom: 0.4rem; }}
 .project-card:hover {{ border-color: var(--accent); }}
 .project-thumb {{ width: 100%; height: 110px; object-fit: cover; display: block; background: var(--code-bg); }}
 .project-thumb--fallback {{ display: flex; align-items: center; justify-content: center; font-size: 2.2rem; }}
+.project-thumb--fallback img {{ width: 2.2rem; height: 2.2rem; }}
 .project-card__body {{ padding: 0.75rem 0.9rem; display: flex; flex-direction: column; flex: 1; }}
 .project-card__body p {{ font-size: 0.85rem; margin: 0; }}
 .project-card__actions {{ display: flex; gap: 0.4rem; margin-top: auto; padding-top: 0.7rem; }}
