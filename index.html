@@ -4,24 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cuauhtémoc Bautista — AI Engineer</title>
-<meta name="description" content="Índice de mis proyectos en GitHub. Cada uno vive en su propio repo, con código abierto, tests y CI; los que están desplegados enlazan su demo en vivo.">
+<meta name="description" content="Este portafolio reúne flujos multiagente con guardrails, productos de datos, interfaces interactivas y templates reproducibles. Cada repositorio muestra una parte del enfoque: construir software útil con prácticas de ingeniería verificables.">
 <link rel="canonical" href="https://cuauhtemocbe.github.io/">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cuauhtemocbe.github.io/">
 <meta property="og:title" content="Cuauhtémoc Bautista — AI Engineer">
-<meta property="og:description" content="Índice de mis proyectos en GitHub. Cada uno vive en su propio repo, con código abierto, tests y CI; los que están desplegados enlazan su demo en vivo.">
+<meta property="og:description" content="Este portafolio reúne flujos multiagente con guardrails, productos de datos, interfaces interactivas y templates reproducibles. Cada repositorio muestra una parte del enfoque: construir software útil con prácticas de ingeniería verificables.">
 <meta property="og:image" content="https://cuauhtemocbe.github.io/assets/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cuauhtémoc Bautista — AI Engineer">
-<meta name="twitter:description" content="Índice de mis proyectos en GitHub. Cada uno vive en su propio repo, con código abierto, tests y CI; los que están desplegados enlazan su demo en vivo.">
+<meta name="twitter:description" content="Este portafolio reúne flujos multiagente con guardrails, productos de datos, interfaces interactivas y templates reproducibles. Cada repositorio muestra una parte del enfoque: construir software útil con prácticas de ingeniería verificables.">
 <meta name="twitter:image" content="https://cuauhtemocbe.github.io/assets/og-image.jpg">
 
 <style>
 :root {
+  color-scheme: light dark;
   --bg: #ffffff; --bg-alt: #f5f6f8; --text: #1c1f24; --text-dim: #565d68;
-  --accent: #2a6df5; --border: #e3e6ea; --code-bg: #eef1f5;
+  --accent: #1f5fe0; --border: #e3e6ea; --code-bg: #eef1f5;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -31,6 +32,10 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
 body {
   margin: 0; background: var(--bg); color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -38,12 +43,14 @@ body {
 }
 main { max-width: 780px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
 h1 { font-size: 1.9rem; margin: 0 0 0.25rem; }
-h2 { font-size: 1.3rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; margin-top: 2.5rem; scroll-margin-top: 4.5rem; }
+h2 { font-size: 1.3rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; margin-top: 2.5rem; scroll-margin-top: 3.25rem; }
 h3 { font-size: 1.05rem; margin-bottom: 0.75rem; }
+h3 img { width: 1.2em; height: 1.2em; vertical-align: -0.2em; margin-right: 0.25rem; }
 h4 { margin: 0 0 0.25rem; font-size: 0.98rem; }
 p { color: var(--text-dim); }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
 code { background: var(--code-bg); padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.85em; }
 .subtitle { color: var(--text-dim); font-weight: 600; margin: 0 0 1rem; }
 .contact { margin-bottom: 1.25rem; font-size: 0.95rem; }
@@ -61,7 +68,7 @@ code { background: var(--code-bg); padding: 0.1rem 0.35rem; border-radius: 4px; 
 .site-nav a:hover { color: var(--accent); text-decoration: none; }
 ul { padding-left: 1.1rem; color: var(--text-dim); }
 li { margin-bottom: 0.4rem; }
-.contribution-graph { background: #f5f6f8; border-radius: 10px; padding: 0.75rem; margin-bottom: 1rem; overflow-x: auto; }
+.contribution-graph { background: var(--bg-alt); border-radius: 10px; padding: 0.75rem; margin-bottom: 1rem; overflow-x: auto; }
 .contribution-graph img { display: block; min-width: 640px; }
 .activity-list { list-style: none; padding: 0; }
 .activity-list li { padding: 0.5rem 0.75rem; background: var(--bg-alt); border-radius: 8px; margin-bottom: 0.5rem; font-size: 0.92rem; }
@@ -70,6 +77,7 @@ li { margin-bottom: 0.4rem; }
 .project-card:hover { border-color: var(--accent); }
 .project-thumb { width: 100%; height: 110px; object-fit: cover; display: block; background: var(--code-bg); }
 .project-thumb--fallback { display: flex; align-items: center; justify-content: center; font-size: 2.2rem; }
+.project-thumb--fallback img { width: 2.2rem; height: 2.2rem; }
 .project-card__body { padding: 0.75rem 0.9rem; display: flex; flex-direction: column; flex: 1; }
 .project-card__body p { font-size: 0.85rem; margin: 0; }
 .project-card__actions { display: flex; gap: 0.4rem; margin-top: auto; padding-top: 0.7rem; }
@@ -86,79 +94,78 @@ footer { margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }
 <body>
 <main>
   <h1>Cuauhtémoc Bautista</h1>
-  <p class="subtitle">AI Engineer — agentes LLM, data apps y templates de infraestructura</p>
+  <p class="subtitle">AI Engineer — construyo sistemas con agentes LLM, productos de datos y bases de software listas para evolucionar.</p>
   <p class="contact"><a href="https://cuauhtemocbe.com/">🌐 cuauhtemocbe.com</a> &middot; <a href="https://www.linkedin.com/in/cuauhtemocbe">💼 LinkedIn</a></p>
   <nav class="site-nav" aria-label="Secciones"><a href="#proyectos">Proyectos</a>
 <a href="#destacado">Proyecto destacado</a>
 <a href="#actividad">Actividad reciente</a>
 <a href="#stack">Stack</a></nav>
-  <p>Índice de mis proyectos en GitHub. Cada uno vive en su propio repo, con código
-abierto, tests y CI; los que están desplegados enlazan su demo en vivo.</p>
+  <p>Este portafolio reúne flujos multiagente con guardrails, productos de datos, interfaces interactivas y templates reproducibles. Cada repositorio muestra una parte del enfoque: construir software útil con prácticas de ingeniería verificables.</p>
 
   <h2 id="proyectos">Proyectos</h2>
   
         <div class="category">
-          <h3>🤖 IA / LLMs</h3>
+          <h3><img src="./assets/icons/agents.svg" alt="" aria-hidden="true" loading="lazy"> Agentes y LLMs</h3>
           <div class="project-grid">
             <article class="project-card">
               <img class="project-thumb" src="assets/screenshots/translate-and-teach.png" alt="Screenshot de translate-and-teach" loading="lazy">
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/translate-and-teach">translate-and-teach</a></h4>
-                <p>Analizador de frases español→inglés con análisis gramatical y tips de aprendizaje, usando Llama 3.3 70B vía Together.ai. React + TypeScript, 54 tests, CI.</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/translate-and-teach">Código</a><a class="project-action project-action--demo" href="https://translate-and-teach-production.up.railway.app/" target="_blank" rel="noopener">Demo ↗</a></div>
+                <p>Analizador español→inglés con gramática y tips de aprendizaje mediante Llama 3.3 70B vía Together.ai.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/translate-and-teach" aria-label="Código de translate-and-teach">Código</a><a class="project-action project-action--demo" href="https://translate-and-teach-production.up.railway.app/" target="_blank" rel="noopener" aria-label="Demo de translate-and-teach">Demo ↗</a></div>
               </div>
             </article>
             <article class="project-card">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🎬</span></div>
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><img src="assets/project-icons/reel-forge-ts.svg" alt=""></div>
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/reel-forge-ts">reel-forge-ts</a></h4>
-                <p>Generador local de reels verticales a partir de imágenes + guion, con pacing, transiciones y captions decididos dinámicamente por <strong>Claude Code CLI</strong>. Tests con Vitest.</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/reel-forge-ts">Código</a></div>
+                <p>Generador local de reels verticales que decide pacing, transiciones y captions con <strong>Claude Code CLI</strong>.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/reel-forge-ts" aria-label="Código de reel-forge-ts">Código</a></div>
               </div>
             </article>
             <article class="project-card">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🧪</span></div>
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><img src="assets/project-icons/agentic-evals.svg" alt=""></div>
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/agentic-evals">agentic-evals</a></h4>
-                <p>Prácticas de evaluación de agentes (agentic evals): entorno reproducible con Docker + Poetry + JupyterLab.</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/agentic-evals">Código</a></div>
+                <p>Entorno reproducible con Docker, Poetry y JupyterLab para practicar evaluación de agentes.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/agentic-evals" aria-label="Código de agentic-evals">Código</a></div>
               </div>
             </article>
             <article class="project-card">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🦙</span></div>
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><img src="assets/project-icons/ollama-open-webui.svg" alt=""></div>
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/Ollama-Open-WebUI">Ollama-Open-WebUI</a></h4>
-                <p>Instalación automatizada de Ollama + Open WebUI con Docker para correr LLMs localmente con interfaz tipo ChatGPT.</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/Ollama-Open-WebUI">Código</a></div>
+                <p>Instalación automatizada de Ollama y Open WebUI con Docker para ejecutar LLMs localmente.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/Ollama-Open-WebUI" aria-label="Código de Ollama-Open-WebUI">Código</a></div>
               </div>
             </article></div>
         </div>
 
         <div class="category">
-          <h3>📊 Data Science / ML</h3>
+          <h3><img src="./assets/icons/data.svg" alt="" aria-hidden="true" loading="lazy"> Datos y ML</h3>
           <div class="project-grid">
             <article class="project-card">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>₿</span></div>
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><img src="assets/project-icons/btc-predictor.svg" alt=""></div>
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/btc-predictor">btc-predictor</a></h4>
-                <p>Webapp de ML para predecir el precio de Bitcoin al día siguiente, con registro de predicciones, error histórico y simulación de PnL. Tests con pytest y mutation testing (100% score, Cosmic Ray).</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/btc-predictor">Código</a></div>
+                <p>Webapp de ML para predecir Bitcoin al día siguiente, registrar predicciones, revisar error histórico y simular PnL.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/btc-predictor" aria-label="Código de btc-predictor">Código</a><a class="project-action project-action--demo" href="https://btc-predictor.railway.app/" target="_blank" rel="noopener" aria-label="Demo de btc-predictor">Demo ↗</a></div>
               </div>
             </article>
             <article class="project-card">
               <img class="project-thumb" src="assets/screenshots/avocadodash.png" alt="Screenshot de AvocadoDash" loading="lazy">
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/AvocadoDash">AvocadoDash</a></h4>
-                <p>Tablero interactivo (Python Dash) para analizar precios y ventas de aguacate en EE. UU. (2015–2018). Tests con pytest y CI.</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/AvocadoDash">Código</a><a class="project-action project-action--demo" href="https://avocadodash-production.up.railway.app/" target="_blank" rel="noopener">Demo ↗</a></div>
+                <p>Dashboard en Python Dash para explorar precios y ventas de aguacate en EE. UU. (2015–2018).</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/AvocadoDash" aria-label="Código de AvocadoDash">Código</a><a class="project-action project-action--demo" href="https://avocadodash-production.up.railway.app/" target="_blank" rel="noopener" aria-label="Demo de AvocadoDash">Demo ↗</a></div>
               </div>
             </article>
             <article class="project-card">
               <img class="project-thumb" src="assets/screenshots/homicides-rate-visualizer.png" alt="Screenshot de homicides-rate-visualizer" loading="lazy">
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/homicides-rate-visualizer">homicides-rate-visualizer</a></h4>
-                <p>Simulador interactivo de escenarios hipotéticos de homicidios en México (2000–2026). React + TypeScript + Vite, tests con Vitest y CI.</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/homicides-rate-visualizer">Código</a><a class="project-action project-action--demo" href="https://homicides-rate-visualizer-production.up.railway.app/" target="_blank" rel="noopener">Demo ↗</a></div>
+                <p>Simulador interactivo de escenarios hipotéticos de homicidios en México (2000–2026).</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/homicides-rate-visualizer" aria-label="Código de homicides-rate-visualizer">Código</a><a class="project-action project-action--demo" href="https://homicides-rate-visualizer-production.up.railway.app/" target="_blank" rel="noopener" aria-label="Demo de homicides-rate-visualizer">Demo ↗</a></div>
               </div>
             </article>
             <article class="project-card">
@@ -166,71 +173,71 @@ abierto, tests y CI; los que están desplegados enlazan su demo en vivo.</p>
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/judicial-candidates-mx">judicial-candidates-mx</a></h4>
                 <p>Webapp en Flask para comparar y analizar candidaturas judiciales en México.</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/judicial-candidates-mx">Código</a><a class="project-action project-action--demo" href="https://judicial-candidates-mx-production.up.railway.app/" target="_blank" rel="noopener">Demo ↗</a></div>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/judicial-candidates-mx" aria-label="Código de judicial-candidates-mx">Código</a><a class="project-action project-action--demo" href="https://judicial-candidates-mx-production.up.railway.app/" target="_blank" rel="noopener" aria-label="Demo de judicial-candidates-mx">Demo ↗</a></div>
               </div>
             </article>
             <article class="project-card">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>📦</span></div>
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><img src="assets/project-icons/portfolio-data-scientist.svg" alt=""></div>
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/Portfolio-Data-Scientist">Portfolio-Data-Scientist</a></h4>
-                <p>Colección de proyectos de ciencia de datos: clasificación de lluvia en Australia, ETL con Postgres y análisis de sentimiento con NLP.</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/Portfolio-Data-Scientist">Código</a></div>
+                <p>Colección de clasificación, ETL con Postgres y análisis de sentimiento con NLP.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/Portfolio-Data-Scientist" aria-label="Código de Portfolio-Data-Scientist">Código</a></div>
               </div>
             </article>
             <article class="project-card">
-              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><span>🎓</span></div>
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><img src="assets/project-icons/diplomado-ciencia-datos.svg" alt=""></div>
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos">Diplomado-Ciencia-Datos</a></h4>
-                <p>Entorno Dockerizado (Python 3.12 + Jupyter + Poetry) y actividades del Diplomado de Ciencia de Datos 2024–2025. CI con Pylint y tests.</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos">Código</a></div>
+                <p>Entorno Dockerizado con Python, Jupyter y Poetry para actividades de ciencia de datos 2024–2025.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos" aria-label="Código de Diplomado-Ciencia-Datos">Código</a></div>
               </div>
             </article></div>
         </div>
 
         <div class="category">
-          <h3>🛠️ Infraestructura / Ingeniería</h3>
+          <h3><img src="./assets/icons/infrastructure.svg" alt="" aria-hidden="true" loading="lazy"> Templates e infraestructura</h3>
           <div class="project-grid">
             <article class="project-card">
               <img class="project-thumb" src="assets/screenshots/dockyard2sail-py.png" alt="Screenshot de dockyard2sail-py" loading="lazy">
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/dockyard2sail-py">dockyard2sail-py</a></h4>
-                <p>Template de API REST en Python: FastAPI + Docker + arquitectura hexagonal, CI con cobertura mínima 90%, typecheck (mypy) y escaneo de vulnerabilidades (Trivy).</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/dockyard2sail-py">Código</a><a class="project-action project-action--demo" href="https://dockyard2sail-py-production.up.railway.app/" target="_blank" rel="noopener">Demo ↗</a></div>
+                <p>Template de API REST en Python con FastAPI, Docker y arquitectura hexagonal; incluye typecheck, cobertura y Trivy.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/dockyard2sail-py" aria-label="Código de dockyard2sail-py">Código</a><a class="project-action project-action--demo" href="https://dockyard2sail-py-production.up.railway.app/" target="_blank" rel="noopener" aria-label="Demo de dockyard2sail-py">Demo ↗</a></div>
               </div>
             </article>
             <article class="project-card">
               <img class="project-thumb" src="assets/screenshots/dockyard2sail-ts.png" alt="Screenshot de dockyard2sail-ts" loading="lazy">
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/dockyard2sail-ts">dockyard2sail-ts</a></h4>
-                <p>Boilerplate TypeScript listo para producción: Docker, DevContainers, CI (typecheck, tests con cobertura, build, audit).</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/dockyard2sail-ts">Código</a><a class="project-action project-action--demo" href="https://dockyard2sail-ts-production.up.railway.app/" target="_blank" rel="noopener">Demo ↗</a></div>
+                <p>Base TypeScript con Docker, DevContainers y automatización de typecheck, tests, build y audit.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/dockyard2sail-ts" aria-label="Código de dockyard2sail-ts">Código</a><a class="project-action project-action--demo" href="https://dockyard2sail-ts-production.up.railway.app/" target="_blank" rel="noopener" aria-label="Demo de dockyard2sail-ts">Demo ↗</a></div>
               </div>
             </article></div>
         </div>
 
         <div class="category">
-          <h3>🧰 Apps / Herramientas</h3>
+          <h3><img src="./assets/icons/interfaces.svg" alt="" aria-hidden="true" loading="lazy"> Interfaces interactivas</h3>
           <div class="project-grid">
             <article class="project-card">
               <img class="project-thumb" src="assets/screenshots/audio-sync-app.png" alt="Screenshot de audio-sync-app" loading="lazy">
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/audio-sync-app">audio-sync-app</a></h4>
-                <p>SPA en React + Vite que resalta palabra por palabra una transcripción sincronizada con audio. Tests (Vitest), CI, Docker.</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/audio-sync-app">Código</a><a class="project-action project-action--demo" href="https://audio-sync-app-production.up.railway.app/" target="_blank" rel="noopener">Demo ↗</a></div>
+                <p>SPA en React + Vite que resalta cada palabra de una transcripción sincronizada con audio.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/audio-sync-app" aria-label="Código de audio-sync-app">Código</a><a class="project-action project-action--demo" href="https://audio-sync-app-production.up.railway.app/" target="_blank" rel="noopener" aria-label="Demo de audio-sync-app">Demo ↗</a></div>
               </div>
             </article>
             <article class="project-card">
               <img class="project-thumb" src="assets/screenshots/pixel-vibe.png" alt="Screenshot de pixel-vibe" loading="lazy">
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/pixel-vibe">pixel-vibe</a></h4>
-                <p>Videojuego en Phaser.js + TypeScript + Vite, desarrollado junto con mi hijo usando vibe coding. Docker + DevContainer + pnpm.</p>
-                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/pixel-vibe">Código</a><a class="project-action project-action--demo" href="https://pixel-vibe-production.up.railway.app/" target="_blank" rel="noopener">Demo ↗</a></div>
+                <p>Videojuego en Phaser.js, TypeScript y Vite desarrollado junto con mi hijo usando vibe coding.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/pixel-vibe" aria-label="Código de pixel-vibe">Código</a><a class="project-action project-action--demo" href="https://pixel-vibe-production.up.railway.app/" target="_blank" rel="noopener" aria-label="Demo de pixel-vibe">Demo ↗</a></div>
               </div>
             </article></div>
         </div>
 
   <h2 id="destacado">Proyecto destacado</h2>
-  <p><strong>meta-projects</strong> — meta-repo privado que orquesta todo este portafolio (<code>~/Projects</code>) con agentes LLM. Repo privado, sin link público — la descripción es del sistema, no del código:</p>
+  <p><strong>meta-projects</strong> — meta-repo privado que orquesta este portafolio (<code>~/Projects</code>) con agentes LLM. Aunque el código no es público, sus decisiones se reflejan en los repositorios visibles:</p>
   
 <svg viewBox="0 0 400 160" class="flagship-diagram" role="img" aria-label="Diagrama de arquitectura de meta-projects">
   <g class="node"><rect x="10" y="10" width="170" height="55" rx="8"/><text x="95" y="32">Framework agéntico</text><text x="95" y="50">multicapa</text></g>
@@ -243,10 +250,10 @@ abierto, tests y CI; los que están desplegados enlazan su demo en vivo.</p>
   <line x1="180" y1="122" x2="220" y2="122" class="edge"/>
 </svg>
 
-  <ul><li><strong>Framework agéntico multicapa</strong>: agentes LLM (Claude Code CLI, skills propios, servidores MCP) con una capa mecánica de hooks para automatizar la gestión de múltiples repositorios y servicios.</li>
-<li><strong>Orquestación multiagente en dos etapas</strong>: un agente propone User Stories cross-repo y otro las implementa tras aprobación humana, invocando Claude Code CLI en cada repo destino.</li>
-<li><strong>Guardrails de seguridad</strong>: sin push directo a main (rama + PR + CI verde) y un gate de Socket Firewall que bloquea dependencias maliciosas en PRs de Dependabot, con SCA continuo.</li>
-<li><strong>Gobernanza de estándares a escala</strong>: auditoría automatizada de buenas prácticas por repositorio y sincronización de configuración y skills de Claude Code entre proyectos.</li></ul>
+  <ul><li><strong>Framework agéntico multicapa</strong>: agentes LLM, skills propios, servidores MCP y hooks para gestionar múltiples repositorios y servicios.</li>
+<li><strong>Orquestación multiagente en dos etapas</strong>: User Stories cross-repo e implementación tras aprobación humana mediante Claude Code CLI.</li>
+<li><strong>Guardrails de seguridad</strong>: ramas y PRs en lugar de push directo a main, CI verde y un gate de Socket Firewall para dependencias.</li>
+<li><strong>Gobernanza de estándares</strong>: auditoría de buenas prácticas y sincronización de configuración y skills entre proyectos.</li></ul>
 
   <h2 id="actividad">🔭 Actividad reciente</h2>
   <div class="contribution-graph"><img src="https://ghchart.rshah.org/2a6df5/cuauhtemocbe" alt="Gráfico de contribuciones de cuauhtemocbe" loading="lazy"></div>
@@ -257,7 +264,7 @@ abierto, tests y CI; los que están desplegados enlazan su demo en vivo.</p>
 <li>📝 Issue labeled en <strong>btc-predictor</strong>: Validate continuity of historical price data</li></ul>
 
   <h2 id="stack">Stack</h2>
-  <p><span class="badge">Python</span> <span class="badge">TypeScript</span> <span class="badge">React</span> <span class="badge">FastAPI</span> <span class="badge">LLMs (Claude, Llama, Together.ai)</span> <span class="badge">Docker</span> <span class="badge">Railway</span> <span class="badge">GitHub Actions</span> <span class="badge">pytest</span></p>
+  <p><span class="badge">Python</span> <span class="badge">TypeScript</span> <span class="badge">React</span> <span class="badge">FastAPI</span> <span class="badge">Flask</span> <span class="badge">Dash</span> <span class="badge">LLMs</span> <span class="badge">Claude</span> <span class="badge">Llama</span> <span class="badge">Together.ai</span> <span class="badge">Docker</span> <span class="badge">Railway</span> <span class="badge">GitHub Actions</span> <span class="badge">pytest</span></p>
 
   <footer>Generado automáticamente desde README.md — no editar index.html a mano.</footer>
 </main>

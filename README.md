@@ -1,53 +1,52 @@
 # Cuauhtémoc Bautista
 
-**AI Engineer — agentes LLM, data apps y templates de infraestructura**
+**AI Engineer — construyo sistemas con agentes LLM, productos de datos y bases de software listas para evolucionar.**
 
 🌐 [cuauhtemocbe.com](https://cuauhtemocbe.com/)
 💼 [LinkedIn](https://www.linkedin.com/in/cuauhtemocbe)
 
-Índice de mis proyectos en GitHub. Cada uno vive en su propio repo, con código
-abierto, tests y CI; los que están desplegados enlazan su demo en vivo.
+Este portafolio reúne flujos multiagente con guardrails, productos de datos, interfaces interactivas y templates reproducibles. Cada repositorio muestra una parte del enfoque: construir software útil con prácticas de ingeniería verificables.
 
 ---
 
 ## Proyectos
 
-### 🤖 IA / LLMs
+### ![](./assets/icons/agents.svg) Agentes y LLMs
 
-- **[translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach)** — Analizador de frases español→inglés con análisis gramatical y tips de aprendizaje, usando Llama 3.3 70B vía Together.ai. React + TypeScript, 54 tests, CI. · [Demo](https://translate-and-teach-production.up.railway.app/)
-- **[reel-forge-ts](https://github.com/cuauhtemocbe/reel-forge-ts)** — Generador local de reels verticales a partir de imágenes + guion, con pacing, transiciones y captions decididos dinámicamente por **Claude Code CLI**. Tests con Vitest.
-- **[agentic-evals](https://github.com/cuauhtemocbe/agentic-evals)** — Prácticas de evaluación de agentes (agentic evals): entorno reproducible con Docker + Poetry + JupyterLab.
-- **[Ollama-Open-WebUI](https://github.com/cuauhtemocbe/Ollama-Open-WebUI)** — Instalación automatizada de Ollama + Open WebUI con Docker para correr LLMs localmente con interfaz tipo ChatGPT.
+- **[translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach)** — Analizador español→inglés con gramática y tips de aprendizaje mediante Llama 3.3 70B vía Together.ai. · [Demo](https://translate-and-teach-production.up.railway.app/)
+- **[reel-forge-ts](https://github.com/cuauhtemocbe/reel-forge-ts)** — Generador local de reels verticales que decide pacing, transiciones y captions con **Claude Code CLI**.
+- **[agentic-evals](https://github.com/cuauhtemocbe/agentic-evals)** — Entorno reproducible con Docker, Poetry y JupyterLab para practicar evaluación de agentes.
+- **[Ollama-Open-WebUI](https://github.com/cuauhtemocbe/Ollama-Open-WebUI)** — Instalación automatizada de Ollama y Open WebUI con Docker para ejecutar LLMs localmente.
 
-### 📊 Data Science / ML
+### ![](./assets/icons/data.svg) Datos y ML
 
-- **[btc-predictor](https://github.com/cuauhtemocbe/btc-predictor)** — Webapp de ML para predecir el precio de Bitcoin al día siguiente, con registro de predicciones, error histórico y simulación de PnL. Tests con pytest y mutation testing (100% score, Cosmic Ray).
-- **[AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash)** — Tablero interactivo (Python Dash) para analizar precios y ventas de aguacate en EE. UU. (2015–2018). Tests con pytest y CI. · [Demo](https://avocadodash-production.up.railway.app/)
-- **[homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer)** — Simulador interactivo de escenarios hipotéticos de homicidios en México (2000–2026). React + TypeScript + Vite, tests con Vitest y CI. · [Demo](https://homicides-rate-visualizer-production.up.railway.app/)
+- **[btc-predictor](https://github.com/cuauhtemocbe/btc-predictor)** — Webapp de ML para predecir Bitcoin al día siguiente, registrar predicciones, revisar error histórico y simular PnL. · [Demo](https://btc-predictor.railway.app/)
+- **[AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash)** — Dashboard en Python Dash para explorar precios y ventas de aguacate en EE. UU. (2015–2018). · [Demo](https://avocadodash-production.up.railway.app/)
+- **[homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer)** — Simulador interactivo de escenarios hipotéticos de homicidios en México (2000–2026). · [Demo](https://homicides-rate-visualizer-production.up.railway.app/)
 - **[judicial-candidates-mx](https://github.com/cuauhtemocbe/judicial-candidates-mx)** — Webapp en Flask para comparar y analizar candidaturas judiciales en México. · [Demo](https://judicial-candidates-mx-production.up.railway.app/)
-- **[Portfolio-Data-Scientist](https://github.com/cuauhtemocbe/Portfolio-Data-Scientist)** — Colección de proyectos de ciencia de datos: clasificación de lluvia en Australia, ETL con Postgres y análisis de sentimiento con NLP.
-- **[Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos)** — Entorno Dockerizado (Python 3.12 + Jupyter + Poetry) y actividades del Diplomado de Ciencia de Datos 2024–2025. CI con Pylint y tests.
+- **[Portfolio-Data-Scientist](https://github.com/cuauhtemocbe/Portfolio-Data-Scientist)** — Colección de clasificación, ETL con Postgres y análisis de sentimiento con NLP.
+- **[Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos)** — Entorno Dockerizado con Python, Jupyter y Poetry para actividades de ciencia de datos 2024–2025.
 
-### 🛠️ Infraestructura / Ingeniería
+### ![](./assets/icons/infrastructure.svg) Templates e infraestructura
 
-- **[dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py)** — Template de API REST en Python: FastAPI + Docker + arquitectura hexagonal, CI con cobertura mínima 90%, typecheck (mypy) y escaneo de vulnerabilidades (Trivy). · [Demo](https://dockyard2sail-py-production.up.railway.app/)
-- **[dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts)** — Boilerplate TypeScript listo para producción: Docker, DevContainers, CI (typecheck, tests con cobertura, build, audit). · [Demo](https://dockyard2sail-ts-production.up.railway.app/)
+- **[dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py)** — Template de API REST en Python con FastAPI, Docker y arquitectura hexagonal; incluye typecheck, cobertura y Trivy. · [Demo](https://dockyard2sail-py-production.up.railway.app/)
+- **[dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts)** — Base TypeScript con Docker, DevContainers y automatización de typecheck, tests, build y audit. · [Demo](https://dockyard2sail-ts-production.up.railway.app/)
 
-### 🧰 Apps / Herramientas
+### ![](./assets/icons/interfaces.svg) Interfaces interactivas
 
-- **[audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app)** — SPA en React + Vite que resalta palabra por palabra una transcripción sincronizada con audio. Tests (Vitest), CI, Docker. · [Demo](https://audio-sync-app-production.up.railway.app/)
-- **[pixel-vibe](https://github.com/cuauhtemocbe/pixel-vibe)** — Videojuego en Phaser.js + TypeScript + Vite, desarrollado junto con mi hijo usando vibe coding. Docker + DevContainer + pnpm. · [Demo](https://pixel-vibe-production.up.railway.app/)
+- **[audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app)** — SPA en React + Vite que resalta cada palabra de una transcripción sincronizada con audio. · [Demo](https://audio-sync-app-production.up.railway.app/)
+- **[pixel-vibe](https://github.com/cuauhtemocbe/pixel-vibe)** — Videojuego en Phaser.js, TypeScript y Vite desarrollado junto con mi hijo usando vibe coding. · [Demo](https://pixel-vibe-production.up.railway.app/)
 
 ---
 
 ## Proyecto destacado
 
-**meta-projects** — meta-repo privado que orquesta todo este portafolio (`~/Projects`) con agentes LLM. Repo privado, sin link público — la descripción es del sistema, no del código:
+**meta-projects** — meta-repo privado que orquesta este portafolio (`~/Projects`) con agentes LLM. Aunque el código no es público, sus decisiones se reflejan en los repositorios visibles:
 
-- **Framework agéntico multicapa**: agentes LLM (Claude Code CLI, skills propios, servidores MCP) con una capa mecánica de hooks para automatizar la gestión de múltiples repositorios y servicios.
-- **Orquestación multiagente en dos etapas**: un agente propone User Stories cross-repo y otro las implementa tras aprobación humana, invocando Claude Code CLI en cada repo destino.
-- **Guardrails de seguridad**: sin push directo a main (rama + PR + CI verde) y un gate de Socket Firewall que bloquea dependencias maliciosas en PRs de Dependabot, con SCA continuo.
-- **Gobernanza de estándares a escala**: auditoría automatizada de buenas prácticas por repositorio y sincronización de configuración y skills de Claude Code entre proyectos.
+- **Framework agéntico multicapa**: agentes LLM, skills propios, servidores MCP y hooks para gestionar múltiples repositorios y servicios.
+- **Orquestación multiagente en dos etapas**: User Stories cross-repo e implementación tras aprobación humana mediante Claude Code CLI.
+- **Guardrails de seguridad**: ramas y PRs en lugar de push directo a main, CI verde y un gate de Socket Firewall para dependencias.
+- **Gobernanza de estándares**: auditoría de buenas prácticas y sincronización de configuración y skills entre proyectos.
 
 ---
 
@@ -67,4 +66,4 @@ abierto, tests y CI; los que están desplegados enlazan su demo en vivo.
 
 ## Stack
 
-`Python` `TypeScript` `React` `FastAPI` `LLMs (Claude, Llama, Together.ai)` `Docker` `Railway` `GitHub Actions` `pytest`
+`Python` `TypeScript` `React` `FastAPI` `Flask` `Dash` `LLMs` `Claude` `Llama` `Together.ai` `Docker` `Railway` `GitHub Actions` `pytest`
