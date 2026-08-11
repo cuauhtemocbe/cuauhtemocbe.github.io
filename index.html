@@ -85,6 +85,11 @@ li { margin-bottom: 0.4rem; }
 .project-action:hover { text-decoration: none; opacity: 0.8; }
 .badge { display: inline-block; background: var(--code-bg); border-radius: 6px; padding: 0.2rem 0.6rem; margin: 0.15rem; font-size: 0.85rem; }
 .flagship-diagram { width: 100%; max-width: 420px; height: auto; margin: 1rem 0; }
+.flagship { border: 1px solid var(--accent); border-radius: 14px; padding: 1.1rem 1.25rem 1.25rem; background: var(--bg-alt); box-shadow: 0 8px 24px rgba(31, 95, 224, 0.1); }
+.flagship h2 { margin-top: 0; border-bottom-color: var(--accent); }
+.flagship__lead { border-left: 3px solid var(--accent); padding-left: 0.9rem; }
+.flagship__lead p { margin-top: 0; }
+.flagship ul { margin-bottom: 0; }
 .flagship-diagram rect { fill: var(--code-bg); stroke: var(--border); }
 .flagship-diagram text { fill: var(--text); font-size: 11px; text-anchor: middle; font-family: inherit; }
 .flagship-diagram .edge { stroke: var(--accent); stroke-width: 2; }
@@ -236,10 +241,10 @@ footer { margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }
             </article></div>
         </div>
 
-  <h2 id="destacado">Proyecto destacado</h2>
-  <p><strong>meta-projects</strong> — meta-repo privado que orquesta este portafolio (<code>~/Projects</code>) con agentes LLM. Aunque el código no es público, sus decisiones se reflejan en los repositorios visibles:</p>
-  
-<svg viewBox="0 0 400 160" class="flagship-diagram" role="img" aria-label="Diagrama de arquitectura de meta-projects">
+  <section id="destacado" class="flagship">
+    <h2>Proyecto destacado</h2>
+    <div class="flagship__lead"><p><strong>META-PROJECTS · ORQUESTACIÓN MULTIAGENTE</strong> — <strong>meta-projects</strong> es un meta-repo privado que orquesta este portafolio (<code>~/Projects</code>) con agentes LLM. Aunque el código no es público, sus decisiones se reflejan en los repositorios visibles:</p></div>
+    <svg viewBox="0 0 400 160" class="flagship-diagram" role="img" aria-label="Diagrama de arquitectura de meta-projects">
   <g class="node"><rect x="10" y="10" width="170" height="55" rx="8"/><text x="95" y="32">Framework agéntico</text><text x="95" y="50">multicapa</text></g>
   <g class="node"><rect x="220" y="10" width="170" height="55" rx="8"/><text x="305" y="32">Orquestación</text><text x="305" y="50">en dos etapas</text></g>
   <g class="node"><rect x="10" y="95" width="170" height="55" rx="8"/><text x="95" y="117">Guardrails de</text><text x="95" y="135">seguridad</text></g>
@@ -249,11 +254,11 @@ footer { margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }
   <line x1="305" y1="65" x2="305" y2="95" class="edge"/>
   <line x1="180" y1="122" x2="220" y2="122" class="edge"/>
 </svg>
-
-  <ul><li><strong>Framework agéntico multicapa</strong>: agentes LLM, skills propios, servidores MCP y hooks para gestionar múltiples repositorios y servicios.</li>
+    <ul><li><strong>Framework agéntico multicapa</strong>: agentes LLM, skills propios, servidores MCP y hooks para gestionar múltiples repositorios y servicios.</li>
 <li><strong>Orquestación multiagente en dos etapas</strong>: User Stories cross-repo e implementación tras aprobación humana mediante Claude Code CLI.</li>
 <li><strong>Guardrails de seguridad</strong>: ramas y PRs en lugar de push directo a main, CI verde y un gate de Socket Firewall para dependencias.</li>
 <li><strong>Gobernanza de estándares</strong>: auditoría de buenas prácticas y sincronización de configuración y skills entre proyectos.</li></ul>
+  </section>
 
   <h2 id="actividad">🔭 Actividad reciente</h2>
   <div class="contribution-graph"><img src="https://ghchart.rshah.org/2a6df5/cuauhtemocbe" alt="Gráfico de contribuciones de cuauhtemocbe" loading="lazy"></div>

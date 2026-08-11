@@ -366,6 +366,11 @@ li {{ margin-bottom: 0.4rem; }}
 .project-action:hover {{ text-decoration: none; opacity: 0.8; }}
 .badge {{ display: inline-block; background: var(--code-bg); border-radius: 6px; padding: 0.2rem 0.6rem; margin: 0.15rem; font-size: 0.85rem; }}
 .flagship-diagram {{ width: 100%; max-width: 420px; height: auto; margin: 1rem 0; }}
+.flagship {{ border: 1px solid var(--accent); border-radius: 14px; padding: 1.1rem 1.25rem 1.25rem; background: var(--bg-alt); box-shadow: 0 8px 24px rgba(31, 95, 224, 0.1); }}
+.flagship h2 {{ margin-top: 0; border-bottom-color: var(--accent); }}
+.flagship__lead {{ border-left: 3px solid var(--accent); padding-left: 0.9rem; }}
+.flagship__lead p {{ margin-top: 0; }}
+.flagship ul {{ margin-bottom: 0; }}
 .flagship-diagram rect {{ fill: var(--code-bg); stroke: var(--border); }}
 .flagship-diagram text {{ fill: var(--text); font-size: 11px; text-anchor: middle; font-family: inherit; }}
 .flagship-diagram .edge {{ stroke: var(--accent); stroke-width: 2; }}
@@ -383,10 +388,12 @@ footer {{ margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }}
   <h2 id="proyectos">Proyectos</h2>
   {categories_html}
 
-  <h2 id="destacado">Proyecto destacado</h2>
-  <p>{inline(destacado_intro)}</p>
-  {FLAGSHIP_DIAGRAM}
-  <ul>{destacado_bullets_html}</ul>
+  <section id="destacado" class="flagship">
+    <h2>Proyecto destacado</h2>
+    <div class="flagship__lead"><p>{inline(destacado_intro)}</p></div>
+    {FLAGSHIP_DIAGRAM.strip()}
+    <ul>{destacado_bullets_html}</ul>
+  </section>
 
   <h2 id="actividad">🔭 Actividad reciente</h2>
   {contribution_graph_html}

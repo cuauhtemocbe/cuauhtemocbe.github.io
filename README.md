@@ -41,7 +41,7 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 
 ## Proyecto destacado
 
-**meta-projects** — meta-repo privado que orquesta este portafolio (`~/Projects`) con agentes LLM. Aunque el código no es público, sus decisiones se reflejan en los repositorios visibles:
+**META-PROJECTS · ORQUESTACIÓN MULTIAGENTE** — **meta-projects** es un meta-repo privado que orquesta este portafolio (`~/Projects`) con agentes LLM. Aunque el código no es público, sus decisiones se reflejan en los repositorios visibles:
 
 - **Framework agéntico multicapa**: agentes LLM, skills propios, servidores MCP y hooks para gestionar múltiples repositorios y servicios.
 - **Orquestación multiagente en dos etapas**: User Stories cross-repo e implementación tras aprobación humana mediante Claude Code CLI.
