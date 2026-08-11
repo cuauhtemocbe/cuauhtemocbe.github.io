@@ -71,7 +71,10 @@ li { margin-bottom: 0.4rem; }
 .contribution-graph { background: var(--bg-alt); border-radius: 10px; padding: 0.75rem; margin-bottom: 1rem; overflow-x: auto; }
 .contribution-graph img { display: block; min-width: 640px; }
 .activity-list { list-style: none; padding: 0; }
-.activity-list li { padding: 0.5rem 0.75rem; background: var(--bg-alt); border-radius: 8px; margin-bottom: 0.5rem; font-size: 0.92rem; }
+.activity-intro { margin: 0 0 0.9rem; }
+.activity-list { margin-left: 0.45rem; border-left: 2px solid var(--border); padding-left: 1rem; }
+.activity-list li { position: relative; padding: 0.65rem 0.85rem; background: var(--bg-alt); border-radius: 0 8px 8px 0; margin-bottom: 0.55rem; font-size: 0.92rem; }
+.activity-list li::before { content: ""; position: absolute; width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--accent); left: -1.36rem; top: 0.9rem; box-shadow: 0 0 0 3px var(--bg); }
 .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.9rem; margin-bottom: 1.5rem; }
 .project-card { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--bg-alt); }
 .project-card:hover { border-color: var(--accent); }
@@ -260,13 +263,12 @@ footer { margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }
 <li><strong>Gobernanza de estándares</strong>: auditoría de buenas prácticas y sincronización de configuración y skills entre proyectos.</li></ul>
   </section>
 
-  <h2 id="actividad">🔭 Actividad reciente</h2>
-  <div class="contribution-graph"><img src="https://ghchart.rshah.org/2a6df5/cuauhtemocbe" alt="Gráfico de contribuciones de cuauhtemocbe" loading="lazy"></div>
-  <ul class="activity-list"><li>📝 Issue labeled en <strong>btc-predictor</strong>: Improve model reproducibility and failure handling</li>
-<li>📝 Issue labeled en <strong>btc-predictor</strong>: Prevent blocking database calls in API endpoints</li>
-<li>📝 Issue labeled en <strong>btc-predictor</strong>: Improve model reproducibility and failure handling</li>
-<li>📝 Issue labeled en <strong>btc-predictor</strong>: Prevent blocking database calls in API endpoints</li>
-<li>📝 Issue labeled en <strong>btc-predictor</strong>: Validate continuity of historical price data</li></ul>
+  <h2 id="actividad">Actividad reciente</h2>
+
+  <p class="activity-intro">Cambios recientes en los repositorios públicos.</p>
+  <ul class="activity-list"><li><strong>Issue etiquetada</strong> · <a href="https://github.com/cuauhtemocbe/btc-predictor">btc-predictor</a> — Improve model reproducibility and failure handling</li>
+<li><strong>Issue etiquetada</strong> · <a href="https://github.com/cuauhtemocbe/btc-predictor">btc-predictor</a> — Prevent blocking database calls in API endpoints</li>
+<li><strong>Issue etiquetada</strong> · <a href="https://github.com/cuauhtemocbe/btc-predictor">btc-predictor</a> — Validate continuity of historical price data</li></ul>
 
   <h2 id="stack">Stack</h2>
   <p><span class="badge">Python</span> <span class="badge">TypeScript</span> <span class="badge">React</span> <span class="badge">FastAPI</span> <span class="badge">Flask</span> <span class="badge">Dash</span> <span class="badge">LLMs</span> <span class="badge">Claude</span> <span class="badge">Llama</span> <span class="badge">Together.ai</span> <span class="badge">Docker</span> <span class="badge">Railway</span> <span class="badge">GitHub Actions</span> <span class="badge">pytest</span></p>

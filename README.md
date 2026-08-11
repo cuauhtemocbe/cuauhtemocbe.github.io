@@ -50,16 +50,14 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 
 ---
 
-## 🔭 Actividad reciente
+## Actividad reciente
 
-![Gráfico de contribuciones de cuauhtemocbe](https://ghchart.rshah.org/2a6df5/cuauhtemocbe)
+Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- 📝 Issue labeled en **btc-predictor**: Improve model reproducibility and failure handling
-- 📝 Issue labeled en **btc-predictor**: Prevent blocking database calls in API endpoints
-- 📝 Issue labeled en **btc-predictor**: Improve model reproducibility and failure handling
-- 📝 Issue labeled en **btc-predictor**: Prevent blocking database calls in API endpoints
-- 📝 Issue labeled en **btc-predictor**: Validate continuity of historical price data
+- **Issue etiquetada** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — Improve model reproducibility and failure handling
+- **Issue etiquetada** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — Prevent blocking database calls in API endpoints
+- **Issue etiquetada** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — Validate continuity of historical price data
 <!--RECENT_ACTIVITY:end-->
 
 ---

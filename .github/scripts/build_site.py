@@ -124,6 +124,14 @@ def bullet_items(body: str):
 actividad_heading, actividad_body = sections.get("actividadreciente", ("", ""))
 actividad_body_clean = re.sub(r"<!--.*?-->", "", actividad_body, flags=re.S)
 actividad_items = bullet_items(actividad_body_clean)
+actividad_intro = next(
+    (
+        line.strip()
+        for line in actividad_body_clean.splitlines()
+        if line.strip() and not line.strip().startswith(("- ", "!"))
+    ),
+    "",
+)
 contribution_graph_m = re.search(r"^!\[[^\]]*\]\([^)]+\)", actividad_body_clean, re.M)
 contribution_graph_line = contribution_graph_m.group(0) if contribution_graph_m else ""
 
@@ -200,11 +208,17 @@ activity_html = (
     "\n".join(f"<li>{inline(item)}</li>" for item in actividad_items)
     or "<li><em>Sin actividad pública reciente.</em></li>"
 )
+activity_intro_html = (
+    f'<p class="activity-intro">{inline(actividad_intro)}</p>'
+    if actividad_intro
+    else ""
+)
 contribution_graph_html = (
     f'<div class="contribution-graph">{inline(contribution_graph_line)}</div>'
     if contribution_graph_line
     else ""
 )
+activity_graph_html = f"  {contribution_graph_html}" if contribution_graph_html else ""
 
 destacado_bullets_html = "\n".join(
     f"<li>{inline(b)}</li>" for b in destacado_bullets
@@ -352,7 +366,10 @@ li {{ margin-bottom: 0.4rem; }}
 .contribution-graph {{ background: var(--bg-alt); border-radius: 10px; padding: 0.75rem; margin-bottom: 1rem; overflow-x: auto; }}
 .contribution-graph img {{ display: block; min-width: 640px; }}
 .activity-list {{ list-style: none; padding: 0; }}
-.activity-list li {{ padding: 0.5rem 0.75rem; background: var(--bg-alt); border-radius: 8px; margin-bottom: 0.5rem; font-size: 0.92rem; }}
+.activity-intro {{ margin: 0 0 0.9rem; }}
+.activity-list {{ margin-left: 0.45rem; border-left: 2px solid var(--border); padding-left: 1rem; }}
+.activity-list li {{ position: relative; padding: 0.65rem 0.85rem; background: var(--bg-alt); border-radius: 0 8px 8px 0; margin-bottom: 0.55rem; font-size: 0.92rem; }}
+.activity-list li::before {{ content: ""; position: absolute; width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--accent); left: -1.36rem; top: 0.9rem; box-shadow: 0 0 0 3px var(--bg); }}
 .project-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.9rem; margin-bottom: 1.5rem; }}
 .project-card {{ display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--bg-alt); }}
 .project-card:hover {{ border-color: var(--accent); }}
@@ -395,8 +412,9 @@ footer {{ margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }}
     <ul>{destacado_bullets_html}</ul>
   </section>
 
-  <h2 id="actividad">🔭 Actividad reciente</h2>
-  {contribution_graph_html}
+  <h2 id="actividad">Actividad reciente</h2>
+{activity_graph_html}
+  {activity_intro_html}
   <ul class="activity-list">{activity_html}</ul>
 
   <h2 id="stack">Stack</h2>
