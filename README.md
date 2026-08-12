@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
+- **Push** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) · 2026-08-12
 - **Issue etiquetó** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Review test suite and re-run mutation testing across all packages](https://github.com/cuauhtemocbe/btc-predictor/issues/83) · 2026-08-11
 - **Issue abrió** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Review test suite and re-run mutation testing across all packages](https://github.com/cuauhtemocbe/btc-predictor/issues/83) · 2026-08-11
 - **Issue etiquetó** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [monitor-railway.sh always times out, even on successful deploys](https://github.com/cuauhtemocbe/btc-predictor/issues/82) · 2026-08-11
 - **Issue abrió** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [monitor-railway.sh always times out, even on successful deploys](https://github.com/cuauhtemocbe/btc-predictor/issues/82) · 2026-08-11
-- **PR integró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [fix(metrics): normalize Sharpe ratio and drawdown by a reference capital](https://github.com/cuauhtemocbe/btc-predictor/pull/81) · 2026-08-11
 <!--RECENT_ACTIVITY:end-->
 
 ---
