@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [Evals_estudiantes](https://github.com/cuauhtemocbe/Evals_estudiantes) · 2026-08-13
-- **Push** · [agentic-evals](https://github.com/cuauhtemocbe/agentic-evals) · 2026-08-13
-- **PR abrió** · [Evals_estudiantes](https://github.com/UrielEscalona/Evals_estudiantes) — [Agrega link proyecto01](https://github.com/UrielEscalona/Evals_estudiantes/pull/1) · 2026-08-13
-- **Push** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) · 2026-08-12
-- **Issue etiquetó** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Review test suite and re-run mutation testing across all packages](https://github.com/cuauhtemocbe/btc-predictor/issues/83) · 2026-08-11
+- **PR integró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [ci: build and Trivy-scan the production Docker image on push to main](https://github.com/cuauhtemocbe/dockyard2sail-ts/pull/57) · 2026-08-14
+- **Push** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) · 2026-08-14
+- **Issue cerró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [Remove pnpm from production Docker image to eliminate 27 bundled HIGH/CRITICAL CVEs](https://github.com/cuauhtemocbe/dockyard2sail-ts/issues/56) · 1 comentario · 2026-08-14
+- **Issue cerró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [Build and scan the production Docker image on push to main](https://github.com/cuauhtemocbe/dockyard2sail-ts/issues/50) · 2026-08-14
+- **PR integró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [fix(deps): pin nanoid to 3.3.18 to resolve CVE-2026-67213](https://github.com/cuauhtemocbe/dockyard2sail-ts/pull/59) · 2026-08-14
 <!--RECENT_ACTIVITY:end-->
 
 ---
