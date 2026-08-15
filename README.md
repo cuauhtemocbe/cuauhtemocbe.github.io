@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **PR integró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [ci: build and Trivy-scan the production Docker image on push to main](https://github.com/cuauhtemocbe/dockyard2sail-ts/pull/57) · 2026-08-14
-- **Push** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) · 2026-08-14
-- **Issue cerró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [Remove pnpm from production Docker image to eliminate 27 bundled HIGH/CRITICAL CVEs](https://github.com/cuauhtemocbe/dockyard2sail-ts/issues/56) · 1 comentario · 2026-08-14
-- **Issue cerró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [Build and scan the production Docker image on push to main](https://github.com/cuauhtemocbe/dockyard2sail-ts/issues/50) · 2026-08-14
-- **PR integró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [fix(deps): pin nanoid to 3.3.18 to resolve CVE-2026-67213](https://github.com/cuauhtemocbe/dockyard2sail-ts/pull/59) · 2026-08-14
+- **Push** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) · 2026-08-15
+- **PR integró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [feat(docker): delegate make validate to Docker instead of the host](https://github.com/cuauhtemocbe/dockyard2sail-ts/pull/60) · 2026-08-15
+- **Issue cerró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [Delegate make validate to Docker instead of the host](https://github.com/cuauhtemocbe/dockyard2sail-ts/issues/53) · 2026-08-15
+- **PR abrió** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [feat(docker): delegate make validate to Docker instead of the host](https://github.com/cuauhtemocbe/dockyard2sail-ts/pull/60) · 2026-08-15
+- **Issue cerró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [Respect prefers-reduced-motion in the demo pipeline animation](https://github.com/cuauhtemocbe/dockyard2sail-ts/issues/52) · 1 comentario · 2026-08-15
 <!--RECENT_ACTIVITY:end-->
 
 ---
