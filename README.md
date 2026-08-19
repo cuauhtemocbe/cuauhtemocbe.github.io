@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **PR integró** · [Evals_estudiantes](https://github.com/UrielEscalona/Evals_estudiantes) — [Agrega link proyecto01](https://github.com/UrielEscalona/Evals_estudiantes/pull/1) · 2026-08-18
-- **Push** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) · 2026-08-15
-- **PR integró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [feat(docker): delegate make validate to Docker instead of the host](https://github.com/cuauhtemocbe/dockyard2sail-ts/pull/60) · 2026-08-15
-- **Issue cerró** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [Delegate make validate to Docker instead of the host](https://github.com/cuauhtemocbe/dockyard2sail-ts/issues/53) · 2026-08-15
-- **PR abrió** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) — [feat(docker): delegate make validate to Docker instead of the host](https://github.com/cuauhtemocbe/dockyard2sail-ts/pull/60) · 2026-08-15
+- **Push** · [agentic-evals](https://github.com/cuauhtemocbe/agentic-evals) · 2026-08-19
+- **Push** · [walking-skeleton-spring-react](https://github.com/cuauhtemocbe/walking-skeleton-spring-react) · 2026-08-18
+- **Issue etiquetó** · [walking-skeleton-spring-react](https://github.com/cuauhtemocbe/walking-skeleton-spring-react) — [Bug: actualizar() en ProductoService y ClienteService no persiste cambios (entidad detached)](https://github.com/cuauhtemocbe/walking-skeleton-spring-react/issues/39) · 2026-08-18
+- **Issue abrió** · [walking-skeleton-spring-react](https://github.com/cuauhtemocbe/walking-skeleton-spring-react) — [Bug: actualizar() en ProductoService y ClienteService no persiste cambios (entidad detached)](https://github.com/cuauhtemocbe/walking-skeleton-spring-react/issues/39) · 2026-08-18
+- **Issue cerró** · [walking-skeleton-spring-react](https://github.com/cuauhtemocbe/walking-skeleton-spring-react) — [Verificación con Claude Code: demo de aceptación de la Parte 1](https://github.com/cuauhtemocbe/walking-skeleton-spring-react/issues/31) · 2026-08-18
 <!--RECENT_ACTIVITY:end-->
 
 ---
