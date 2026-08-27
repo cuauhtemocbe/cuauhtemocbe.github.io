@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [agentic-evals](https://github.com/cuauhtemocbe/agentic-evals) · 2026-08-20
+- **Push** · [agentic-evals](https://github.com/cuauhtemocbe/agentic-evals) · 2026-08-27
+- **PR abrió** · [Evals_estudiantes](https://github.com/UrielEscalona/Evals_estudiantes) — [Documentar Proyecto 1 y 2 con evidencias del deploy](https://github.com/UrielEscalona/Evals_estudiantes/pull/4) · 2026-08-27
 - **Push** · [walking-skeleton-spring-react](https://github.com/cuauhtemocbe/walking-skeleton-spring-react) · 2026-08-18
 - **Issue etiquetó** · [walking-skeleton-spring-react](https://github.com/cuauhtemocbe/walking-skeleton-spring-react) — [Bug: actualizar() en ProductoService y ClienteService no persiste cambios (entidad detached)](https://github.com/cuauhtemocbe/walking-skeleton-spring-react/issues/39) · 2026-08-18
 - **Issue abrió** · [walking-skeleton-spring-react](https://github.com/cuauhtemocbe/walking-skeleton-spring-react) — [Bug: actualizar() en ProductoService y ClienteService no persiste cambios (entidad detached)](https://github.com/cuauhtemocbe/walking-skeleton-spring-react/issues/39) · 2026-08-18
-- **Issue cerró** · [walking-skeleton-spring-react](https://github.com/cuauhtemocbe/walking-skeleton-spring-react) — [Verificación con Claude Code: demo de aceptación de la Parte 1](https://github.com/cuauhtemocbe/walking-skeleton-spring-react/issues/31) · 2026-08-18
 <!--RECENT_ACTIVITY:end-->
 
 ---
