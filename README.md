@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
+- **Push** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) · 2026-08-26
 - **Push** · [agentic-evals](https://github.com/cuauhtemocbe/agentic-evals) · 2026-08-27
 - **PR abrió** · [Evals_estudiantes](https://github.com/UrielEscalona/Evals_estudiantes) — [Documentar Proyecto 1 y 2 con evidencias del deploy](https://github.com/UrielEscalona/Evals_estudiantes/pull/4) · 2026-08-27
 - **Push** · [walking-skeleton-spring-react](https://github.com/cuauhtemocbe/walking-skeleton-spring-react) · 2026-08-18
 - **Issue etiquetó** · [walking-skeleton-spring-react](https://github.com/cuauhtemocbe/walking-skeleton-spring-react) — [Bug: actualizar() en ProductoService y ClienteService no persiste cambios (entidad detached)](https://github.com/cuauhtemocbe/walking-skeleton-spring-react/issues/39) · 2026-08-18
-- **Issue abrió** · [walking-skeleton-spring-react](https://github.com/cuauhtemocbe/walking-skeleton-spring-react) — [Bug: actualizar() en ProductoService y ClienteService no persiste cambios (entidad detached)](https://github.com/cuauhtemocbe/walking-skeleton-spring-react/issues/39) · 2026-08-18
 <!--RECENT_ACTIVITY:end-->
 
 ---
