@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **PR integró** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) — [ci: unpin pnpm version in Socket Firewall gate](https://github.com/cuauhtemocbe/homicides-rate-visualizer/pull/56) · 2026-09-02
-- **PR abrió** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) — [ci: unpin pnpm version in Socket Firewall gate](https://github.com/cuauhtemocbe/homicides-rate-visualizer/pull/56) · 2026-09-02
-- **Push** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) · 2026-08-26
-- **Push** · [agentic-evals](https://github.com/cuauhtemocbe/agentic-evals) · 2026-08-27
-- **PR abrió** · [Evals_estudiantes](https://github.com/UrielEscalona/Evals_estudiantes) — [Documentar Proyecto 1 y 2 con evidencias del deploy](https://github.com/UrielEscalona/Evals_estudiantes/pull/4) · 2026-08-27
+- **Push** · [dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py) · 2026-09-02
+- **Push** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) · 2026-09-02
+- **Push** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) · 2026-09-02
+- **PR cerró** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) — [ci: harden pnpm and clear dependency security CVEs](https://github.com/cuauhtemocbe/homicides-rate-visualizer/pull/58) · 1 comentario · 2026-09-03
+- **PR abrió** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) — [ci: harden pnpm and clear dependency security CVEs](https://github.com/cuauhtemocbe/homicides-rate-visualizer/pull/58) · 1 comentario · 2026-09-03
 <!--RECENT_ACTIVITY:end-->
 
 ---
