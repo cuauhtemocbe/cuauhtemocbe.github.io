@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py) · 2026-09-02
-- **Push** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) · 2026-09-02
+- **PR integró** · [translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach) — [build(deps-dev): bump typescript from 5.9.3 to 7.0.2](https://github.com/cuauhtemocbe/translate-and-teach/pull/33) · 1 comentario · 2026-09-04
+- **PR cerró** · [translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach) — [build(deps-dev): bump typescript from 5.9.3 to 7.0.2](https://github.com/cuauhtemocbe/translate-and-teach/pull/13) · 3 comentarios · 2026-09-04
+- **PR abrió** · [translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach) — [build(deps-dev): bump typescript from 5.9.3 to 7.0.2](https://github.com/cuauhtemocbe/translate-and-teach/pull/33) · 1 comentario · 2026-09-04
+- **Push** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) · 2026-09-03
 - **Push** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) · 2026-09-02
-- **PR cerró** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) — [ci: harden pnpm and clear dependency security CVEs](https://github.com/cuauhtemocbe/homicides-rate-visualizer/pull/58) · 1 comentario · 2026-09-03
-- **PR abrió** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) — [ci: harden pnpm and clear dependency security CVEs](https://github.com/cuauhtemocbe/homicides-rate-visualizer/pull/58) · 1 comentario · 2026-09-03
 <!--RECENT_ACTIVITY:end-->
 
 ---
