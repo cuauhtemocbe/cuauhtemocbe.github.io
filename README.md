@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
+- **Push** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) · 2026-09-05
 - **Push** · [translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach) · 2026-09-04
 - **Issue etiquetó** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) — [Add sonar-project.properties + fix coverage report path for local SonarQube analysis](https://github.com/cuauhtemocbe/AvocadoDash/issues/73) · 2026-09-05
 - **Issue abrió** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) — [Add sonar-project.properties + fix coverage report path for local SonarQube analysis](https://github.com/cuauhtemocbe/AvocadoDash/issues/73) · 2026-09-05
 - **PR cerró** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) — [build(deps): bump python from 3.13-slim to 3.14-slim in the minor-and-patch group across 1 directory](https://github.com/cuauhtemocbe/AvocadoDash/pull/64) · 3 comentarios · 2026-08-30
-- **Push** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) · 2026-09-03
 <!--RECENT_ACTIVITY:end-->
 
 ---
