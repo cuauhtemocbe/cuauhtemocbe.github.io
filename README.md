@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
+- **Issue cerró** · [Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos) — [Make core and NLP quality checks pass independently](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos/issues/47) · 1 comentario · 2026-09-13
+- **Push** · [Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos) · 2026-09-13
+- **PR cerró** · [Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos) — [chore(codegraph): keep generated data local](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos/pull/44) · 1 comentario · 2026-08-08
+- **Push** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) · 2026-09-13
 - **Push** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) · 2026-09-09
-- **PR abrió** · [Portfolio-Data-Scientist](https://github.com/cuauhtemocbe/Portfolio-Data-Scientist) — [chore(skills): sync from meta-projects canonical](https://github.com/cuauhtemocbe/Portfolio-Data-Scientist/pull/1) · 2026-09-10
-- **PR abrió** · [pixel-vibe](https://github.com/cuauhtemocbe/pixel-vibe) — [chore(skills): sync from meta-projects canonical](https://github.com/cuauhtemocbe/pixel-vibe/pull/40) · 2026-09-10
-- **PR abrió** · [DotFiles](https://github.com/cuauhtemocbe/DotFiles) — [chore(skills): sync from meta-projects canonical](https://github.com/cuauhtemocbe/DotFiles/pull/8) · 2026-09-10
-- **PR abrió** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) — [chore(skills): sync from meta-projects canonical](https://github.com/cuauhtemocbe/DataScience-Docker/pull/31) · 2026-09-10
 <!--RECENT_ACTIVITY:end-->
 
 ---
