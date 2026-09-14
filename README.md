@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Issue cerró** · [Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos) — [Make core and NLP quality checks pass independently](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos/issues/47) · 1 comentario · 2026-09-13
-- **Push** · [Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos) · 2026-09-13
-- **PR cerró** · [Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos) — [chore(codegraph): keep generated data local](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos/pull/44) · 1 comentario · 2026-08-08
-- **Push** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) · 2026-09-13
-- **Push** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) · 2026-09-09
+- **Push** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) · 2026-09-12
+- **Push** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) · 2026-09-14
+- **Issue cerró** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) — [Preserve the input's line breaks in the generated synced transcript](https://github.com/cuauhtemocbe/audio-sync-app/issues/61) · 2026-09-14
+- **Issue cerró** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) — [Accesibilidad: reemplazar span role="button" por <button> nativo en palabras clickeables](https://github.com/cuauhtemocbe/audio-sync-app/issues/57) · 1 comentario · 2026-09-14
+- **Issue etiquetó** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) — [Cambiar URL productiva a dominio custom audio-sync.cuauhtemoc.dev](https://github.com/cuauhtemocbe/audio-sync-app/issues/62) · 2026-09-14
 <!--RECENT_ACTIVITY:end-->
 
 ---
