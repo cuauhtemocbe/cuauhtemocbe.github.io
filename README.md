@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) · 2026-09-12
+- **Push** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) · 2026-09-14
+- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-09-13
+- **Push** · [reel-forge-ts](https://github.com/cuauhtemocbe/reel-forge-ts) · 2026-09-14
 - **Push** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) · 2026-09-14
-- **Issue cerró** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) — [Preserve the input's line breaks in the generated synced transcript](https://github.com/cuauhtemocbe/audio-sync-app/issues/61) · 2026-09-14
-- **Issue cerró** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) — [Accesibilidad: reemplazar span role="button" por <button> nativo en palabras clickeables](https://github.com/cuauhtemocbe/audio-sync-app/issues/57) · 1 comentario · 2026-09-14
-- **Issue etiquetó** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) — [Cambiar URL productiva a dominio custom audio-sync.cuauhtemoc.dev](https://github.com/cuauhtemocbe/audio-sync-app/issues/62) · 2026-09-14
+- **PR abrió** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [feat(hooks): add fail-closed Trivy pre-push CVE gate](https://github.com/cuauhtemocbe/btc-predictor/pull/92) · 2026-09-14
 <!--RECENT_ACTIVITY:end-->
 
 ---
