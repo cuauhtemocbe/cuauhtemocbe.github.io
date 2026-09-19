@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) · 2026-09-14
-- **Push** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) · 2026-09-14
-- **Push** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) · 2026-09-15
-- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-09-13
-- **Push** · [reel-forge-ts](https://github.com/cuauhtemocbe/reel-forge-ts) · 2026-09-14
+- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-09-19
+- **PR integró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [feat(hooks): add fail-closed Trivy pre-push CVE gate](https://github.com/cuauhtemocbe/btc-predictor/pull/92) · 2026-09-19
+- **PR integró** · [agentic-evals](https://github.com/cuauhtemocbe/agentic-evals) — [feat(hooks): add fail-closed Trivy pre-push CVE gate](https://github.com/cuauhtemocbe/agentic-evals/pull/9) · 2026-09-19
+- **Push** · [agentic-evals](https://github.com/cuauhtemocbe/agentic-evals) · 2026-09-19
+- **PR abrió** · [agentic-evals](https://github.com/cuauhtemocbe/agentic-evals) — [feat(hooks): add fail-closed Trivy pre-push CVE gate](https://github.com/cuauhtemocbe/agentic-evals/pull/9) · 2026-09-19
 <!--RECENT_ACTIVITY:end-->
 
 ---
