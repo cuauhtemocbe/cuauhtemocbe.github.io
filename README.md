@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach) · 2026-09-19
-- **Push** · [Portfolio-Data-Scientist](https://github.com/cuauhtemocbe/Portfolio-Data-Scientist) · 2026-09-19
-- **Push** · [homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer) · 2026-09-18
-- **Push** · [Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos) · 2026-09-18
-- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-09-19
+- **Push** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) · 2026-09-24
+- **Push** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) · 2026-09-24
+- **Push** · [Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos) · 2026-09-24
+- **PR integró** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) — [build(python): Standardize on Python 3.14](https://github.com/cuauhtemocbe/DataScience-Docker/pull/36) · 2026-09-24
+- **PR abrió** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) — [build(python): Standardize on Python 3.14](https://github.com/cuauhtemocbe/DataScience-Docker/pull/36) · 2026-09-24
 <!--RECENT_ACTIVITY:end-->
 
 ---
