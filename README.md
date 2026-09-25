@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) · 2026-09-24
-- **Push** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) · 2026-09-24
-- **Push** · [Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos) · 2026-09-24
-- **PR integró** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) — [build(python): Standardize on Python 3.14](https://github.com/cuauhtemocbe/DataScience-Docker/pull/36) · 2026-09-24
-- **PR abrió** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) — [build(python): Standardize on Python 3.14](https://github.com/cuauhtemocbe/DataScience-Docker/pull/36) · 2026-09-24
+- **Push** · [DotFiles](https://github.com/cuauhtemocbe/DotFiles) · 2026-09-25
+- **Push** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) · 2026-09-25
+- **PR integró** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) — [chore: Stop tracking Claude skills](https://github.com/cuauhtemocbe/DataScience-Docker/pull/39) · 2026-09-25
+- **PR abrió** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) — [chore: Stop tracking Claude skills](https://github.com/cuauhtemocbe/DataScience-Docker/pull/39) · 2026-09-25
+- **Issue cerró** · [DotFiles](https://github.com/cuauhtemocbe/DotFiles) — [CLAUDE.md is an unedited generic template, not adapted to this repo](https://github.com/cuauhtemocbe/DotFiles/issues/3) · 1 comentario · 2026-09-25
 <!--RECENT_ACTIVITY:end-->
 
 ---
