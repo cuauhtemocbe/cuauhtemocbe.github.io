@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [DotFiles](https://github.com/cuauhtemocbe/DotFiles) · 2026-09-25
-- **Push** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) · 2026-09-25
-- **PR integró** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) — [chore: Stop tracking Claude skills](https://github.com/cuauhtemocbe/DataScience-Docker/pull/39) · 2026-09-25
-- **PR abrió** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) — [chore: Stop tracking Claude skills](https://github.com/cuauhtemocbe/DataScience-Docker/pull/39) · 2026-09-25
-- **Issue cerró** · [DotFiles](https://github.com/cuauhtemocbe/DotFiles) — [CLAUDE.md is an unedited generic template, not adapted to this repo](https://github.com/cuauhtemocbe/DotFiles/issues/3) · 1 comentario · 2026-09-25
+- **Push** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) · 2026-09-26
+- **Push** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) · 2026-09-26
+- **Push** · [Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos) · 2026-09-25
+- **Push** · [dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py) · 2026-09-26
+- **Push** · [translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach) · 2026-09-26
 <!--RECENT_ACTIVITY:end-->
 
 ---
