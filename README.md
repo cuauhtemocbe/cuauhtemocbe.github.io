@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) · 2026-09-27
-- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-09-26
-- **PR integró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [ci(security): scan production images and Dockerfiles with Trivy (#113)](https://github.com/cuauhtemocbe/btc-predictor/pull/127) · 2026-09-27
-- **Issue cerró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Scan production images and Dockerfiles with Trivy in CI](https://github.com/cuauhtemocbe/btc-predictor/issues/113) · 2026-09-27
-- **PR integró** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) — [ci: Add lock-check and Dependabot for terraform, document main protection](https://github.com/cuauhtemocbe/dockyard2sail-gcp/pull/13) · 2026-09-27
+- **Push** · [translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach) · 2026-09-28
+- **Issue etiquetó** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Sonar Quality Gate failing on new code: coverage 0% and 1 new violation](https://github.com/cuauhtemocbe/btc-predictor/issues/128) · 2026-09-28
+- **Issue abrió** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Sonar Quality Gate failing on new code: coverage 0% and 1 new violation](https://github.com/cuauhtemocbe/btc-predictor/issues/128) · 2026-09-28
+- **Issue etiquetó** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) — [T7: Documentación y cierre de despliegue en dev](https://github.com/cuauhtemocbe/dockyard2sail-gcp/issues/21) · 2026-09-28
+- **Issue abrió** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) — [T7: Documentación y cierre de despliegue en dev](https://github.com/cuauhtemocbe/dockyard2sail-gcp/issues/21) · 2026-09-28
 <!--RECENT_ACTIVITY:end-->
 
 ---
