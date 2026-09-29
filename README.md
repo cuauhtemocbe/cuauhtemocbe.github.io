@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach) · 2026-09-28
-- **Issue etiquetó** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Sonar Quality Gate failing on new code: coverage 0% and 1 new violation](https://github.com/cuauhtemocbe/btc-predictor/issues/128) · 2026-09-28
-- **Issue abrió** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Sonar Quality Gate failing on new code: coverage 0% and 1 new violation](https://github.com/cuauhtemocbe/btc-predictor/issues/128) · 2026-09-28
-- **Issue etiquetó** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) — [T7: Documentación y cierre de despliegue en dev](https://github.com/cuauhtemocbe/dockyard2sail-gcp/issues/21) · 2026-09-28
-- **Issue abrió** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) — [T7: Documentación y cierre de despliegue en dev](https://github.com/cuauhtemocbe/dockyard2sail-gcp/issues/21) · 2026-09-28
+- **Issue etiquetó** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Roll out the Data & Modeling Reboot to production (migrate, load history, verify)](https://github.com/cuauhtemocbe/btc-predictor/issues/131) · 1 comentario · 2026-09-29
+- **Issue abrió** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Roll out the Data & Modeling Reboot to production (migrate, load history, verify)](https://github.com/cuauhtemocbe/btc-predictor/issues/131) · 1 comentario · 2026-09-29
+- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-09-29
+- **Issue cerró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Ingest each daily bar from Binance instead of CoinGecko](https://github.com/cuauhtemocbe/btc-predictor/issues/102) · 1 comentario · 2026-09-29
+- **PR integró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [feat(ingest): ingest closed daily bars from Binance instead of CoinGecko (#102)](https://github.com/cuauhtemocbe/btc-predictor/pull/130) · 2026-09-29
 <!--RECENT_ACTIVITY:end-->
 
 ---
