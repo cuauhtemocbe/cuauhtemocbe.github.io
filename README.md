@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-09-29
-- **PR integró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [fix(workers): filter price queries by symbol so PAXGUSDT rows stop breaking the daily job](https://github.com/cuauhtemocbe/btc-predictor/pull/132) · 2026-09-29
-- **PR abrió** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [fix(workers): filter price queries by symbol so PAXGUSDT rows stop breaking the daily job](https://github.com/cuauhtemocbe/btc-predictor/pull/132) · 2026-09-29
-- **Issue etiquetó** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Roll out the Data & Modeling Reboot to production (migrate, load history, verify)](https://github.com/cuauhtemocbe/btc-predictor/issues/131) · 1 comentario · 2026-09-29
-- **Issue abrió** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Roll out the Data & Modeling Reboot to production (migrate, load history, verify)](https://github.com/cuauhtemocbe/btc-predictor/issues/131) · 1 comentario · 2026-09-29
+- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-10-01
+- **Push** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) · 2026-10-01
+- **PR abrió** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) — [docs: Documentar envs/dev y cerrar el spec despliegue-dev (T7)](https://github.com/cuauhtemocbe/dockyard2sail-gcp/pull/25) · 2026-10-01
+- **PR integró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [docs(specs): mark baselines and walk-forward backtest spec completed (#105, #106)](https://github.com/cuauhtemocbe/btc-predictor/pull/137) · 2026-10-01
+- **PR integró** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) — [feat(bootstrap): Acotar serviceAccountUser de la SA apply a la SA de runtime (T6)](https://github.com/cuauhtemocbe/dockyard2sail-gcp/pull/24) · 2026-10-01
 <!--RECENT_ACTIVITY:end-->
 
 ---
