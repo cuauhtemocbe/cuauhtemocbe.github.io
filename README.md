@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-10-01
-- **Push** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) · 2026-10-01
-- **PR abrió** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) — [docs: Documentar envs/dev y cerrar el spec despliegue-dev (T7)](https://github.com/cuauhtemocbe/dockyard2sail-gcp/pull/25) · 2026-10-01
-- **PR integró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [docs(specs): mark baselines and walk-forward backtest spec completed (#105, #106)](https://github.com/cuauhtemocbe/btc-predictor/pull/137) · 2026-10-01
-- **PR integró** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) — [feat(bootstrap): Acotar serviceAccountUser de la SA apply a la SA de runtime (T6)](https://github.com/cuauhtemocbe/dockyard2sail-gcp/pull/24) · 2026-10-01
+- **Push** · [agentic-evals](https://github.com/cuauhtemocbe/agentic-evals) · 2026-10-02
+- **Push** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) · 2026-10-02
+- **Push** · [dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py) · 2026-10-02
+- **Issue etiquetó** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Cover the operational scripts and make train_all_models opt-in for activation](https://github.com/cuauhtemocbe/btc-predictor/issues/160) · 2026-10-03
+- **Issue abrió** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Cover the operational scripts and make train_all_models opt-in for activation](https://github.com/cuauhtemocbe/btc-predictor/issues/160) · 2026-10-03
 <!--RECENT_ACTIVITY:end-->
 
 ---
