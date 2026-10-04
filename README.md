@@ -55,11 +55,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [agentic-evals](https://github.com/cuauhtemocbe/agentic-evals) · 2026-10-02
-- **Push** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) · 2026-10-02
-- **Push** · [dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py) · 2026-10-02
-- **Issue etiquetó** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Cover the operational scripts and make train_all_models opt-in for activation](https://github.com/cuauhtemocbe/btc-predictor/issues/160) · 2026-10-03
-- **Issue abrió** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Cover the operational scripts and make train_all_models opt-in for activation](https://github.com/cuauhtemocbe/btc-predictor/issues/160) · 2026-10-03
+- **Push** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) · 2026-10-03
+- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-10-03
+- **Push** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) · 2026-10-03
+- **Issue etiquetó** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Define the strategy: how the project makes money in v1, v2 and v3](https://github.com/cuauhtemocbe/btc-predictor/issues/186) · 2026-10-04
+- **Issue abrió** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Define the strategy: how the project makes money in v1, v2 and v3](https://github.com/cuauhtemocbe/btc-predictor/issues/186) · 2026-10-04
 <!--RECENT_ACTIVITY:end-->
 
 ---
