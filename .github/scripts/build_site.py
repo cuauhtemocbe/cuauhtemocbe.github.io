@@ -9,6 +9,7 @@ import re
 import unicodedata
 from html import escape
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 def ascii_key(text: str) -> str:
@@ -245,6 +246,7 @@ FALLBACK_ICONS = {
     "btc-predictor": "btc-predictor.svg",
     "portfolio-data-scientist": "portfolio-data-scientist.svg",
     "diplomado-ciencia-datos": "diplomado-ciencia-datos.svg",
+    "dockyard2sail-gcp": "dockyard2sail-gcp.svg",
 }
 
 
@@ -262,9 +264,17 @@ category_html_parts = []
 for cat in categories:
     cards = []
     for p in cat["projects"]:
+        # A project whose link is not a GitHub repo (private code) only gets a demo action
+        is_repo = urlparse(p["url"]).hostname == "github.com"
+        demo_url = p["demo"] or ("" if is_repo else p["url"])
         demo_action = (
-            f'<a class="project-action project-action--demo" href="{escape(p["demo"], quote=True)}" target="_blank" rel="noopener" aria-label="Demo de {escape(p["name"])}">Demo ↗</a>'
-            if p["demo"]
+            f'<a class="project-action project-action--demo" href="{escape(demo_url, quote=True)}" target="_blank" rel="noopener" aria-label="Demo de {escape(p["name"])}">Demo ↗</a>'
+            if demo_url
+            else ""
+        )
+        code_action = (
+            f'<a class="project-action" href="{escape(p["url"], quote=True)}" aria-label="Código de {escape(p["name"])}">Código</a>'
+            if is_repo
             else ""
         )
         cards.append(
@@ -274,7 +284,7 @@ for cat in categories:
               <div class="project-card__body">
                 <h4><a href="{escape(p['url'], quote=True)}">{escape(p['name'])}</a></h4>
                 <p>{inline(p['desc'])}</p>
-                <div class="project-card__actions"><a class="project-action" href="{escape(p['url'], quote=True)}" aria-label="Código de {escape(p['name'])}">Código</a>{demo_action}</div>
+                <div class="project-card__actions">{code_action}{demo_action}</div>
               </div>
             </article>"""
         )

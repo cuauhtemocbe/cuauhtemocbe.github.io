@@ -4,6 +4,7 @@
 
 🌐 [cuauhtemocbe.com](https://cuauhtemocbe.com/)
 💼 [LinkedIn](https://www.linkedin.com/in/cuauhtemocbe)
+💻 [GitHub](https://github.com/cuauhtemocbe?tab=repositories)
 
 Este portafolio reúne flujos multiagente con guardrails, productos de datos, interfaces interactivas y templates reproducibles. Cada repositorio muestra una parte del enfoque: construir software útil con prácticas de ingeniería verificables.
 
@@ -13,6 +14,7 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 
 ### ![](./assets/icons/agents.svg) Agentes y LLMs
 
+- **[invoice-agent](https://facturas-ia.cuauhtemoc.dev)** — Agente conversacional que registra datos fiscales y genera facturas, con un pipeline de enmascarado que impide que PII y datos de tarjeta lleguen sin protección a un LLM. Código privado.
 - **[translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach)** — Analizador español→inglés con gramática y tips de aprendizaje mediante Llama 3.3 70B vía Together.ai. · [Demo](https://translate-and-teach-production.up.railway.app/)
 - **[reel-forge-ts](https://github.com/cuauhtemocbe/reel-forge-ts)** — Generador local de reels verticales que decide pacing, transiciones y captions con **Claude Code CLI**.
 - **[agentic-evals](https://github.com/cuauhtemocbe/agentic-evals)** — Entorno reproducible con Docker, Poetry y JupyterLab para practicar evaluación de agentes.
@@ -31,10 +33,12 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 
 - **[dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py)** — Template de API REST en Python con FastAPI, Docker y arquitectura hexagonal; incluye typecheck, cobertura y Trivy. · [Demo](https://dockyard2sail-py-production.up.railway.app/)
 - **[dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts)** — Base TypeScript con Docker, DevContainers y automatización de typecheck, tests, build y audit. · [Demo](https://dockyard2sail-ts-production.up.railway.app/)
+- **[dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp)** — Template de Terraform para desplegar una API en Google Cloud Run con CI/CD de GitHub Actions sin llaves de servicio (Workload Identity Federation); en construcción.
+- **[DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker)** — Entorno reproducible de Ciencia de Datos con Python 3.14, Poetry, Docker y JupyterLab que se levanta con un solo comando.
 
 ### ![](./assets/icons/interfaces.svg) Interfaces interactivas
 
-- **[audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app)** — SPA en React + Vite que resalta cada palabra de una transcripción sincronizada con audio. · [Demo](https://audio-sync.cuauhtemoc.dev)
+- **[audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app)** — SPA en React + Vite que resalta cada palabra de una transcripción sincronizada con audio, con narraciones nuevas generadas vía ElevenLabs. · [Demo](https://audio-sync.cuauhtemoc.dev)
 - **[pixel-vibe](https://github.com/cuauhtemocbe/pixel-vibe)** — Videojuego en Phaser.js, TypeScript y Vite desarrollado junto con mi hijo usando vibe coding. · [Demo](https://pixel-vibe-production.up.railway.app/)
 
 ---
@@ -63,4 +67,4 @@ Cambios recientes en los repositorios públicos.
 
 ## Stack
 
-`Python` `TypeScript` `React` `FastAPI` `Flask` `Dash` `LLMs` `Claude` `Llama` `Together.ai` `Docker` `Railway` `GitHub Actions` `pytest`
+`Python` `TypeScript` `React` `FastAPI` `Flask` `Dash` `LLMs` `Claude` `Llama` `Together.ai` `LangGraph` `MCP` `Docker` `Terraform` `Google Cloud` `Railway` `GitHub Actions` `pytest`

@@ -103,7 +103,7 @@ footer { margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }
 <main>
   <h1>Cuauhtémoc Bautista</h1>
   <p class="subtitle">AI Engineer — construyo sistemas con agentes LLM, productos de datos y bases de software listas para evolucionar.</p>
-  <p class="contact"><a href="https://cuauhtemocbe.com/">🌐 cuauhtemocbe.com</a> &middot; <a href="https://www.linkedin.com/in/cuauhtemocbe">💼 LinkedIn</a></p>
+  <p class="contact"><a href="https://cuauhtemocbe.com/">🌐 cuauhtemocbe.com</a> &middot; <a href="https://www.linkedin.com/in/cuauhtemocbe">💼 LinkedIn</a> &middot; <a href="https://github.com/cuauhtemocbe?tab=repositories">💻 GitHub</a></p>
   <nav class="site-nav" aria-label="Secciones"><a href="#proyectos">Proyectos</a>
 <a href="#destacado">Proyecto destacado</a>
 <a href="#actividad">Actividad reciente</a>
@@ -115,6 +115,14 @@ footer { margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }
         <div class="category">
           <h3><img src="./assets/icons/agents.svg" alt="" aria-hidden="true" loading="lazy"> Agentes y LLMs</h3>
           <div class="project-grid">
+            <article class="project-card">
+              <img class="project-thumb" src="assets/screenshots/invoice-agent.png" alt="Screenshot de invoice-agent" loading="lazy">
+              <div class="project-card__body">
+                <h4><a href="https://facturas-ia.cuauhtemoc.dev">invoice-agent</a></h4>
+                <p>Agente conversacional que registra datos fiscales y genera facturas, con un pipeline de enmascarado que impide que PII y datos de tarjeta lleguen sin protección a un LLM. Código privado.</p>
+                <div class="project-card__actions"><a class="project-action project-action--demo" href="https://facturas-ia.cuauhtemoc.dev" target="_blank" rel="noopener" aria-label="Demo de invoice-agent">Demo ↗</a></div>
+              </div>
+            </article>
             <article class="project-card">
               <img class="project-thumb" src="assets/screenshots/translate-and-teach.png" alt="Screenshot de translate-and-teach" loading="lazy">
               <div class="project-card__body">
@@ -220,6 +228,22 @@ footer { margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }
                 <p>Base TypeScript con Docker, DevContainers y automatización de typecheck, tests, build y audit.</p>
                 <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/dockyard2sail-ts" aria-label="Código de dockyard2sail-ts">Código</a><a class="project-action project-action--demo" href="https://dockyard2sail-ts-production.up.railway.app/" target="_blank" rel="noopener" aria-label="Demo de dockyard2sail-ts">Demo ↗</a></div>
               </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb project-thumb--fallback" aria-hidden="true"><img src="assets/project-icons/dockyard2sail-gcp.svg" alt=""></div>
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/dockyard2sail-gcp">dockyard2sail-gcp</a></h4>
+                <p>Template de Terraform para desplegar una API en Google Cloud Run con CI/CD de GitHub Actions sin llaves de servicio (Workload Identity Federation); en construcción.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/dockyard2sail-gcp" aria-label="Código de dockyard2sail-gcp">Código</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <img class="project-thumb" src="assets/screenshots/datascience-docker.png" alt="Screenshot de DataScience-Docker" loading="lazy">
+              <div class="project-card__body">
+                <h4><a href="https://github.com/cuauhtemocbe/DataScience-Docker">DataScience-Docker</a></h4>
+                <p>Entorno reproducible de Ciencia de Datos con Python 3.14, Poetry, Docker y JupyterLab que se levanta con un solo comando.</p>
+                <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/DataScience-Docker" aria-label="Código de DataScience-Docker">Código</a></div>
+              </div>
             </article></div>
         </div>
 
@@ -230,7 +254,7 @@ footer { margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }
               <img class="project-thumb" src="assets/screenshots/audio-sync-app.png" alt="Screenshot de audio-sync-app" loading="lazy">
               <div class="project-card__body">
                 <h4><a href="https://github.com/cuauhtemocbe/audio-sync-app">audio-sync-app</a></h4>
-                <p>SPA en React + Vite que resalta cada palabra de una transcripción sincronizada con audio.</p>
+                <p>SPA en React + Vite que resalta cada palabra de una transcripción sincronizada con audio, con narraciones nuevas generadas vía ElevenLabs.</p>
                 <div class="project-card__actions"><a class="project-action" href="https://github.com/cuauhtemocbe/audio-sync-app" aria-label="Código de audio-sync-app">Código</a><a class="project-action project-action--demo" href="https://audio-sync.cuauhtemoc.dev" target="_blank" rel="noopener" aria-label="Demo de audio-sync-app">Demo ↗</a></div>
               </div>
             </article>
@@ -270,7 +294,7 @@ footer { margin-top: 3rem; font-size: 0.8rem; color: var(--text-dim); }
 <li><strong>Push</strong> · <a href="https://github.com/cuauhtemocbe/btc-predictor">btc-predictor</a> · 2026-10-07</li></ul>
 
   <h2 id="stack">Stack</h2>
-  <p><span class="badge">Python</span> <span class="badge">TypeScript</span> <span class="badge">React</span> <span class="badge">FastAPI</span> <span class="badge">Flask</span> <span class="badge">Dash</span> <span class="badge">LLMs</span> <span class="badge">Claude</span> <span class="badge">Llama</span> <span class="badge">Together.ai</span> <span class="badge">Docker</span> <span class="badge">Railway</span> <span class="badge">GitHub Actions</span> <span class="badge">pytest</span></p>
+  <p><span class="badge">Python</span> <span class="badge">TypeScript</span> <span class="badge">React</span> <span class="badge">FastAPI</span> <span class="badge">Flask</span> <span class="badge">Dash</span> <span class="badge">LLMs</span> <span class="badge">Claude</span> <span class="badge">Llama</span> <span class="badge">Together.ai</span> <span class="badge">LangGraph</span> <span class="badge">MCP</span> <span class="badge">Docker</span> <span class="badge">Terraform</span> <span class="badge">Google Cloud</span> <span class="badge">Railway</span> <span class="badge">GitHub Actions</span> <span class="badge">pytest</span></p>
 
   <footer>Generado automáticamente desde README.md — no editar index.html a mano.</footer>
 </main>
