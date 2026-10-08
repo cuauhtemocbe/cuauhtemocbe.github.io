@@ -55,11 +55,8 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-10-06
-- **Push** · [Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos) · 2026-10-06
-- **Push** · [reel-forge-ts](https://github.com/cuauhtemocbe/reel-forge-ts) · 2026-10-07
-- **PR integró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [docs: Shrink markdown and comments, fix stale content (#180)](https://github.com/cuauhtemocbe/btc-predictor/pull/209) · 2026-10-07
-- **Issue cerró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Shrink and update markdown and code comments with the antislop skill](https://github.com/cuauhtemocbe/btc-predictor/issues/180) · 2026-10-07
+- **Push** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) · 2026-10-07
+- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-10-07
 <!--RECENT_ACTIVITY:end-->
 
 ---
