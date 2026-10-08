@@ -20,7 +20,7 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 
 ### ![](./assets/icons/data.svg) Datos y ML
 
-- **[btc-predictor](https://github.com/cuauhtemocbe/btc-predictor)** — Webapp de ML para predecir Bitcoin al día siguiente, registrar predicciones, revisar error histórico y simular PnL. · [Demo](https://btc-predictor.railway.app/)
+- **[btc-predictor](https://github.com/cuauhtemocbe/btc-predictor)** — Webapp de ML para predecir Bitcoin al día siguiente, registrar predicciones, revisar error histórico y simular PnL. · [Demo](https://btc-predictor-production-096e.up.railway.app)
 - **[AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash)** — Dashboard en Python Dash para explorar precios y ventas de aguacate en EE. UU. (2015–2018). · [Demo](https://avocadodash-production.up.railway.app/)
 - **[homicides-rate-visualizer](https://github.com/cuauhtemocbe/homicides-rate-visualizer)** — Simulador interactivo de escenarios hipotéticos de homicidios en México (2000–2026). · [Demo](https://homicides-rate-visualizer-production.up.railway.app/)
 - **[judicial-candidates-mx](https://github.com/cuauhtemocbe/judicial-candidates-mx)** — Webapp en Flask para comparar y analizar candidaturas judiciales en México. · [Demo](https://judicial-candidates-mx-production.up.railway.app/)
@@ -34,7 +34,7 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 
 ### ![](./assets/icons/interfaces.svg) Interfaces interactivas
 
-- **[audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app)** — SPA en React + Vite que resalta cada palabra de una transcripción sincronizada con audio. · [Demo](https://audio-sync-app-production.up.railway.app/)
+- **[audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app)** — SPA en React + Vite que resalta cada palabra de una transcripción sincronizada con audio. · [Demo](https://audio-sync.cuauhtemoc.dev)
 - **[pixel-vibe](https://github.com/cuauhtemocbe/pixel-vibe)** — Videojuego en Phaser.js, TypeScript y Vite desarrollado junto con mi hijo usando vibe coding. · [Demo](https://pixel-vibe-production.up.railway.app/)
 
 ---
