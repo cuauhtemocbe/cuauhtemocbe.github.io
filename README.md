@@ -59,11 +59,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [reel-forge-ts](https://github.com/cuauhtemocbe/reel-forge-ts) · 2026-11-11
 - **Push** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) · 2026-11-11
-- **Push** · [pixel-vibe](https://github.com/cuauhtemocbe/pixel-vibe) · 2026-11-11
 - **Push** · [translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach) · 2026-11-11
-- **PR integró** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) — [build(docker): Pin Node 26.13.0 and declare engines.node (meta-projects#90)](https://github.com/cuauhtemocbe/audio-sync-app/pull/80) · 1 comentario · 2026-11-11
+- **Push** · [dockyard2sail-ts](https://github.com/cuauhtemocbe/dockyard2sail-ts) · 2026-11-11
+- **Push** · [reel-forge-ts](https://github.com/cuauhtemocbe/reel-forge-ts) · 2026-11-11
+- **Push** · [pixel-vibe](https://github.com/cuauhtemocbe/pixel-vibe) · 2026-11-11
 <!--RECENT_ACTIVITY:end-->
 
 ---
