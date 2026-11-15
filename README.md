@@ -60,10 +60,10 @@ Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
 - **Push** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) · 2026-11-14
+- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-11-14
 - **Push** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) · 2026-11-14
-- **Push** · [reel-forge-ts](https://github.com/cuauhtemocbe/reel-forge-ts) · 2026-11-14
-- **PR integró** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) — [build(docker): Upgrade zlib1g in the production image (meta-projects#92)](https://github.com/cuauhtemocbe/AvocadoDash/pull/105) · 2026-11-14
-- **PR abrió** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) — [build(docker): Upgrade zlib1g in the production image (meta-projects#92)](https://github.com/cuauhtemocbe/AvocadoDash/pull/105) · 2026-11-14
+- **Push** · [Diplomado-Ciencia-Datos](https://github.com/cuauhtemocbe/Diplomado-Ciencia-Datos) · 2026-11-14
+- **Push** · [audio-sync-app](https://github.com/cuauhtemocbe/audio-sync-app) · 2026-11-12
 <!--RECENT_ACTIVITY:end-->
 
 ---
