@@ -59,11 +59,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
+- **Push** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) · 2026-11-15
+- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-11-14
 - **Push** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) · 2026-11-14
 - **Push** · [dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py) · 2026-11-15
 - **Push** · [translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach) · 2026-11-15
-- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-11-14
-- **Push** · [dockyard2sail-gcp](https://github.com/cuauhtemocbe/dockyard2sail-gcp) · 2026-11-14
 <!--RECENT_ACTIVITY:end-->
 
 ---
