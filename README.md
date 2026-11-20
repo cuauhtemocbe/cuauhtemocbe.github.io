@@ -59,11 +59,11 @@ Este portafolio reúne flujos multiagente con guardrails, productos de datos, in
 Cambios recientes en los repositorios públicos.
 
 <!--RECENT_ACTIVITY:start-->
-- **Push** · [AvocadoDash](https://github.com/cuauhtemocbe/AvocadoDash) · 2026-11-15
-- **Push** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) · 2026-11-14
-- **Push** · [DataScience-Docker](https://github.com/cuauhtemocbe/DataScience-Docker) · 2026-11-14
-- **Push** · [dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py) · 2026-11-15
-- **Push** · [translate-and-teach](https://github.com/cuauhtemocbe/translate-and-teach) · 2026-11-15
+- **Push** · [dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py) · 2026-11-20
+- **Issue cerró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [Keep the Models page link on https and stop answering 404 for the favicon](https://github.com/cuauhtemocbe/btc-predictor/issues/240) · 1 comentario · 2026-11-20
+- **PR integró** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [fix(api): Keep the Models link on https and answer the favicon](https://github.com/cuauhtemocbe/btc-predictor/pull/241) · 2026-11-20
+- **PR abrió** · [btc-predictor](https://github.com/cuauhtemocbe/btc-predictor) — [fix(api): Keep the Models link on https and answer the favicon](https://github.com/cuauhtemocbe/btc-predictor/pull/241) · 2026-11-20
+- **Issue cerró** · [dockyard2sail-py](https://github.com/cuauhtemocbe/dockyard2sail-py) — [Show the real environment on the landing page and stop the footer overflowing on phones](https://github.com/cuauhtemocbe/dockyard2sail-py/issues/72) · 1 comentario · 2026-11-20
 <!--RECENT_ACTIVITY:end-->
 
 ---
